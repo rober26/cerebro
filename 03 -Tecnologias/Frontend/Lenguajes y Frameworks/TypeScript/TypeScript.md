@@ -1,0 +1,1 @@
+**TypeScript** es un lenguaje de programación desarrollado por Microsoft que extiende **[[JavaScript]]** agregando **tipado estático opcional** y otras características avanzadas. Su objetivo es hacer que el código sea más seguro, escalable y fácil de mantener, especialmente en proyectos grandes.

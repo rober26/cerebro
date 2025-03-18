@@ -1,0 +1,1 @@
+**Godot** es un motor de videojuegos de código abierto que permite desarrollar juegos en **2D y 3D**. Es una alternativa a motores como Unity y Unreal Engine, con la ventaja de ser ligero, flexible y sin restricciones de licencias comerciales.
