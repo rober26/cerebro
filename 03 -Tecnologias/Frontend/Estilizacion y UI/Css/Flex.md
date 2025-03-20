@@ -33,7 +33,7 @@ Define la dirección de los elementos dentro del contenedor:
 ### 2.2 `justify-content` (Alineación en el Eje Principal)
 Controla cómo se distribuyen los elementos a lo largo del eje principal.
 
-`justify-content: flex-start;` Alineados al inicio 
+`justify-content: flex-start;` Alineados al inicio
 `justify-content: flex-end;` Alineados al final 
 `justify-content: center;`  Centrados 
 `justify-content: space-between;`  Espacio uniforme entre elementos 
@@ -52,86 +52,74 @@ Controla cómo se alinean los elementos en el eje secundario.
 ### 2.4 `align-content` (Solo para Múltiples Líneas)
 Alinea grupos de elementos cuando hay múltiples líneas (si `flex-wrap: wrap;`).
 
-align-content: flex-start;
-align-content: flex-end;
-align-content: center;
-align-content: space-between;
-align-content: space-around;
-align-content: space-evenly;
-2.5 flex-wrap (Control de Desbordamiento)
+`align-content: flex-start;`
+`align-content: flex-end;`
+`align-content: center;`
+`align-content: space-between;`
+`align-content: space-around;`
+`align-content: space-evenly;`
+
+### 2.5 `flex-wrap` (Control de Desbordamiento)
 Por defecto, los elementos intentan ajustarse en una sola línea. flex-wrap permite definir el comportamiento cuando no caben en el contenedor.
 
-css
-Copiar
-Editar
-flex-wrap: nowrap; /* Predeterminado: todo en una línea */
-flex-wrap: wrap; /* Permite múltiples líneas si es necesario */
-flex-wrap: wrap-reverse; /* Igual que wrap, pero en orden inverso */
-2.6 gap (Espaciado Entre Elementos)
+`flex-wrap: nowrap;` Predeterminado: todo en una línea 
+`flex-wrap: wrap;` Permite múltiples líneas si es necesario 
+`flex-wrap: wrap-reverse;` Igual que wrap, pero en orden inverso 
+
+### 2.6 `gap` (Espaciado Entre Elementos)
 Define el espacio entre los elementos flexibles sin afectar los bordes del contenedor.
 
-css
-Copiar
-Editar
-gap: 10px; /* Espacio de 10px entre los elementos */
-row-gap: 10px; /* Espacio entre filas */
-column-gap: 20px; /* Espacio entre columnas */
-3. Propiedades de los Elementos Flexibles
+`gap: 10px;` Espacio de 10px entre los elementos 
+`row-gap: 10px;`  Espacio entre filas 
+`column-gap: 20px;`  Espacio entre columnas
+
+## 3. Propiedades de los Elementos Flexibles
 Estas propiedades afectan individualmente a cada elemento dentro de un contenedor flex.
 
-3.1 flex-grow (Crecimiento)
+### 3.1 flex-grow (Crecimiento)
 Define cuánto puede crecer un elemento en relación con los demás.
 
-css
-Copiar
-Editar
-flex-grow: 1; /* El elemento ocupa todo el espacio disponible */
-flex-grow: 0; /* No crece más allá de su tamaño inicial (predeterminado) */
+`flex-grow: 1;`  El elemento ocupa todo el espacio disponible 
+`flex-grow: 0;`  No crece más allá de su tamaño inicial (predeterminado) 
 Ejemplo:
 
-css
-Copiar
-Editar
-.item1 { flex-grow: 1; }
-.item2 { flex-grow: 2; } /* Ocupará el doble de espacio que item1 */
-3.2 flex-shrink (Encogimiento)
+`.item1 { flex-grow: 1; }`
+`.item2 { flex-grow: 2; }`  Ocupará el doble de espacio que item1 
+### 3.2 flex-shrink (Encogimiento)
 Define cuánto puede reducirse un elemento si no hay suficiente espacio.
 
-css
-Copiar
-Editar
-flex-shrink: 1; /* Predeterminado: se encoge si es necesario */
-flex-shrink: 0; /* No se encoge */
-3.3 flex-basis (Tamaño Inicial)
+`flex-shrink: 1;`  Predeterminado: se encoge si es necesario 
+`flex-shrink: 0;`  No se encoge 
+### 3.3 flex-basis (Tamaño Inicial)
 Define el tamaño inicial de un elemento antes de aplicar flex-grow o flex-shrink.
 
-css
-Copiar
-Editar
-flex-basis: auto; /* Tamaño basado en el contenido */
-flex-basis: 100px; /* Tamaño fijo de 100px */
-3.4 flex (Shorthand)
+`flex-basis: auto;`  Tamaño basado en el contenido 
+`flex-basis: 100px;`  Tamaño fijo de 100px 
+
+### 3.4 flex (Shorthand)
 Agrupa flex-grow, flex-shrink y flex-basis en una sola línea.
 
-css
-Copiar
-Editar
-flex: 1 1 auto; /* grow: 1, shrink: 1, basis: auto */
-flex: 2 0 100px; /* grow: 2, shrink: 0, basis: 100px */
-3.5 align-self (Alineación Individual)
+`flex: 1 1 auto;  grow: 1, shrink: 1, basis: auto` 
+`flex: 2 0 100px;  grow: 2, shrink: 0, basis: 100px` 
+
+### 3.5 align-self (Alineación Individual)
 Permite cambiar la alineación de un elemento sin afectar a los demás.
 
-css
-Copiar
-Editar
-align-self: flex-start;
-align-self: flex-end;
-align-self: center;
-align-self: stretch;
-4. Ejemplo Práctico
-html
-Copiar
-Editar
+`align-self: flex-start;`
+`align-self: flex-end;`
+`align-self: center;`
+`align-self: stretch;`
+
+### 3.6 order (Orden de los Elementos)
+
+Define el orden de aparición de los elementos en un contenedor flex, sin necesidad de modificar el HTML.
+
+- `order: 0;`  Valor predeterminado
+- `order: 1;`  Aparece después de elementos con `order: 0`
+- `order: -1;`  Aparece antes de los elementos con `order: 0`
+
+## 4. Ejemplo Práctico
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -168,8 +156,7 @@ Editar
 </body>
 </html>
 Explicación:
-
-display: flex; activa Flexbox en el .container.
-flex-direction: row; alinea los elementos en fila.
-justify-content: space-around; distribuye los elementos con espacios iguales.
-align-items: center; centra los elementos verticalmente.
+`display: flex;` activa Flexbox en el .container.
+`flex-direction: row;` alinea los elementos en fila.
+`justify-content: space-around;` distribuye los elementos con espacios iguales.
+`align-items: center;` centra los elementos verticalmente.
