@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Diary/18-3-2025.md",
+                "file": "05 - Insti/AD/R1/R1-UD1/R1-UD1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "18-3-2025"
+              "title": "R1-UD1"
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+              "title": "Files"
             }
           },
           {
@@ -157,8 +157,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -176,25 +176,35 @@
       }
     ],
     "direction": "horizontal",
-    "width": 518.5
+    "width": 617.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false
     }
   },
   "active": "824ea36e3065741e",
   "lastOpenFiles": [
+    "05 - Insti/AD/R1/R1-UD2/R1-UD2.md",
+    "05 - Insti/AD/R1/R2-UD2/Untitled.md",
+    "05 - Insti/AD/R1/R1-UD1/R1-UD1.md",
+    "05 - Insti/AD/R1/R1-UD2",
+    "05 - Insti/AD/R1",
+    "05 - Insti/AD/R1/R1-UD1/Properties.md",
+    "05 - Insti/DINT/UD3/UD3.md",
+    "02 - Diary/20-3-2025.md",
+    "05 - Insti/AD/R1-UD1/Untitled",
+    "05 - Insti/AD/R1/R1-UD1",
+    "05 - Insti/AD",
+    "02 - Diary/18-3-2025.md",
     "02 - Diary/Entradas/17-3-2025.md",
     "02 - Diary/Entradas/17-3-2025 1.md",
-    "02 - Diary/18-3-2025.md",
-    "05 - Insti/DINT/UD3/UD3.md",
     "03 -Tecnologias/Frontend/Estilizacion y UI/Css/Flex.md",
     "05 - Insti/DINT/UD4/UD4.md",
     "05 - Insti/DINT/UD5/UD5.md",
@@ -217,19 +227,9 @@
     "02 - Diary/2025-03-16.md",
     "01 - Proyectos/Kaizen/Kaizen(App).md",
     "01 - Proyectos/Kaizen/Kaizen/Kaizen.md",
-    "Proyectos/Kaizen/Kaizen/Hábitos.md",
-    "01 - Proyectos/VideoJuego/Lunareth.md",
-    "01 - Proyectos/VideoJuego/Planificacion.md",
     "00 - Templates",
-    "Diario/Entradas/2025-03-14.md",
-    "Diario/Entradas/2025-03-16.md",
-    "Diario/Tareas",
-    "02 - Diary/Entradas",
     "Sin título 1.canvas",
     "Sin título.canvas",
-    "03 -Tecnologias/DevTools/DiseñoUI/Figma",
-    "03 -Tecnologias/DevTools/DiseñoUI",
-    "03 -Tecnologias/DevTools/Git",
     "Programacion/_Proyectos/VideoJuego/Planificacion.canvas"
   ]
 }
