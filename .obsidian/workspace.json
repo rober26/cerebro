@@ -4,11 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "115fbd8c145eb73a",
+        "id": "1f6910603ce14138",
         "type": "tabs",
         "children": [
           {
-            "id": "191168f62188f95a",
+            "id": "7b7e3fd1bf0a10b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 -Tecnologias/Frontend/Estilizacion y UI/Css/Grid.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Grid"
+            }
+          },
+          {
+            "id": "f8dba31305dd2570",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -44,7 +58,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+              "title": "Files"
             }
           },
           {
@@ -78,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 200
   },
   "right": {
     "id": "3a0d1dcf92de26ae",
@@ -94,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03 -Tecnologias/Frontend/Lenguajes y Frameworks/JavaScript/JavaScript.md",
+                "file": "02 - Diary/16-3-2025.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de JavaScript"
+              "title": "Enlaces entrantes de 16-3-2025"
             }
           },
           {
@@ -142,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03 -Tecnologias/Frontend/Lenguajes y Frameworks/JavaScript/JavaScript.md",
-                "followCursor": false,
+                "file": "02 - Diary/16-3-2025.md",
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de JavaScript"
+              "title": "Esquema de 16-3-2025"
             }
           },
           {
@@ -157,8 +171,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -176,57 +190,64 @@
       }
     ],
     "direction": "horizontal",
-    "width": 1094.5
+    "width": 932.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "191168f62188f95a",
+  "active": "7b7e3fd1bf0a10b3",
   "lastOpenFiles": [
+    "05 - Insti/DINT/UD3/Examen/gatitos/scss/partials/_gatosIMG.scss",
+    "05 - Insti/DINT/UD3/Examen/gatitos/scss/partials/_gatosIMg.scss",
+    "05 - Insti/DINT/UD3/Examen/gatitos/css/estilos.css.map",
+    "05 - Insti/DINT/UD3/Examen/gatitos/scss/partials/_menu.scss",
+    "05 - Insti/DINT/UD3/Examen/gatitos/scss/partials/_galeria-simple.scss",
+    "05 - Insti/DINT/UD3/Examen/gatitos/scss/partials",
+    "05 - Insti/DINT/UD3/Examen/gatitos/scss/base.scss",
+    "05 - Insti/DINT/UD3/Examen/gatitos/scss",
+    "05 - Insti/DINT/UD3/Examen/gatitos/img/galeria/original.jpg",
+    "05 - Insti/DINT/UD3/Examen/gatitos/img/galeria/5.jpg",
+    "05 - Insti/DINT/UD3/Examen/gatitos/img/galeria/4.jpg",
+    "05 - Insti/DINT/UD3/Examen/gatitos/img/galeria/3.jpg",
+    "05 - Insti/DINT/UD3/Examen/gatitos/img/galeria/2.jpg",
+    "05 - Insti/DINT/UD3/Examen/gatitos/img/galeria/1.jpg",
+    "05 - Insti/DINT/UD3/Examen/gatitos/img/galeria",
+    "05 - Insti/DINT/UD3/Examen/gatitos/css/estilos.css",
+    "05 - Insti/DINT/UD3/Examen/gatitos/img",
     "05 - Insti/DINT/UD3/UD3.md",
-    "03 -Tecnologias/Frontend/Estilizacion y UI/Css/Flex.md",
-    "05 - Insti/DINT/UD3/Demo-Examen-Flex/Examen_UD-1 ENU.pdf",
     "03 -Tecnologias/Frontend/Estilizacion y UI/Css/Grid.md",
-    "05 - Insti/DINT/UD3/Demo-Examen-Flex/Flex-MediaQuery.mp4",
-    "03 -Tecnologias/Frontend/Estilizacion y UI/Css/Mobile first.md",
+    "03 -Tecnologias/Frontend/Estilizacion y UI/Css/Flex.md",
+    "02 - Diary/21-3-2025.md",
     "02 - Diary/Entradas/19-3-2025.md",
-    "conflict-files-obsidian-git.md",
-    "05 - Insti/AD/Ud1-Ficheros/R1-UD2/R1-UD2.md",
-    "05 - Insti/AD/Ud1-Ficheros/R1-UD1/R1-UD1.md",
-    "05 - Insti/AD/Ud1-Ficheros/R1-UD1/Properties.md",
-    "05 - Insti/AD/Ud1-Ficheros/R1-UD2",
-    "05 - Insti/AD/Ud1-Ficheros/R1-UD1",
-    "05 - Insti/AD/R1",
-    "02 - Diary/20-3-2025.md",
     "02 - Diary/Entradas/18-3-2025.md",
-    "05 - Insti/DINT/UD3/Demo-Examen-Flex/Flex-MediaQuery/estilos.css",
-    "05 - Insti/DINT/UD3/Demo-Examen-Flex/Examen_UD-1 ENU.odt",
-    "05 - Insti/DINT/UD3/Demo-Examen-Flex/Flex-MediaQuery/index.html",
-    "05 - Insti/DINT/UD3/Demo-Examen-Flex/Flex-MediaQuery",
-    "05 - Insti/DINT/UD3/Demo-Examen-Flex",
-    "03 -Tecnologias/Frontend/Lenguajes y Frameworks/JavaScript/JavaScript.md",
-    "05 - Insti/DINT/UD4/UD4.md",
+    "05 - Insti/AD/R1/R1-UD1/R1-UD1.md",
+    "05 - Insti/AD/R1/R1-UD2/R1-UD2.md",
+    "05 - Insti/AD/R1/R2-UD2/Untitled.md",
+    "05 - Insti/AD/R1/R1-UD1/Properties.md",
+    "02 - Diary/20-3-2025.md",
+    "02 - Diary/18-3-2025.md",
     "02 - Diary/Entradas/17-3-2025.md",
     "02 - Diary/Entradas/17-3-2025 1.md",
+    "05 - Insti/DINT/UD4/UD4.md",
     "05 - Insti/DINT/UD5/UD5.md",
     "00 - Templates/Template Diario.md",
     "03 -Tecnologias/Backed/Docker/Docker.md",
+    "03 -Tecnologias/Frontend/Estilizacion y UI/Css/Mobile first.md",
     "03 -Tecnologias/Frontend/Estilizacion y UI/Css/Css.md",
     "03 -Tecnologias/Frontend/Lenguajes y Frameworks/React/React.md",
+    "03 -Tecnologias/Frontend/Lenguajes y Frameworks/JavaScript/JavaScript.md",
     "03 -Tecnologias/Game Development/Motores de Juegos/Unity/Unity2D.md",
     "03 -Tecnologias/Game Development/Motores de Juegos/Unity/Unity3D.md",
     "05 - Insti/DINT/Sin título.canvas",
     "02 - Diary/Entradas/16-3-2025.md",
-    "02 - Diary/16-3-2025,dom..md",
-    "02 - Diary/2025-03-16.md",
     "Sin título 1.canvas",
     "Sin título.canvas",
     "Programacion/_Proyectos/VideoJuego/Planificacion.canvas"

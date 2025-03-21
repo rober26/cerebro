@@ -1,0 +1,76 @@
+.menu {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #FADFDB;
+  border-radius: 1rem;
+  margin-bottom: 3vh;
+  font-size: 1rem;
+  min-height: 10vh; }
+.menu .opcion {
+  padding: 10px;
+  cursor: pointer; }
+.menu .opcion:hover {
+  background-color: #ddd; }
+
+.galeria {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 60px 0; }
+
+.galeria__titulo {
+  font-size: 2rem; }
+
+.galeria__picture {
+  height: 100%;
+  margin: 0px; }
+
+.galeria__img {
+  max-width: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  height: 100%; }
+
+.galeria {
+  display: grid;
+  grid-template-columns: [col-start] 1fr [col-1-end col-2-start] 2fr [col-2-end col-3-start] 1fr [col-3-end];
+  grid-template-rows: [fil-start] 1fr [fil-1-end fil-2-start] 2fr [fil-2-end fil-3-start] 1fr [fil-3-end]; }
+
+.galeria__titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  grid-column: col-2; }
+
+.img1 {
+  grid-column: col-start;
+  grid-row: fil-start; }
+
+.img2 {
+  grid-column: col-3;
+  grid-row: fil-3; }
+
+.img3 {
+  grid-column: col-start;
+  grid-row: fil-3; }
+
+.img4 {
+  grid-column: col-2;
+  grid-row: fil-2; }
+
+.galeria__img {
+  object-fit: fill; }
+
+body {
+  color: darkblue;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 2rem; }
+
+/*# sourceMappingURL=estilos.css.map */

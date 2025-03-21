@@ -1,0 +1,25 @@
+.galeria{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 60px 0;    
+  }
+  
+  .galeria__titulo{    
+    font-size: 2rem;      
+  }
+  
+  .galeria__picture{        
+    height: 100%;
+    margin: 0px;
+    
+  }
+  
+  .galeria__img{
+    max-width: 100%;
+    min-width: 100%;    
+    object-fit: cover;
+    height: 100%;  
+  }
+
