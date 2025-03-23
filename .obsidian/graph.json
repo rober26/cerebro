@@ -5,48 +5,34 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:Tecnologias/Backed  ",
+      "query": "path:\"00 - Templates\"  ",
       "color": {
         "a": 1,
-        "rgb": 40447
+        "rgb": 14701138
       }
     },
     {
-      "query": "path:\"Tecnologias/Game Development/Motores de Juegos/Godot\"  ",
+      "query": "path:\"01 - Proyectos\"  ",
       "color": {
         "a": 1,
-        "rgb": 10086
+        "rgb": 14725458
       }
     },
     {
-      "query": "path:Proyectos/Kaizen  ",
+      "query": "path:\"02 - Diary\"  ",
       "color": {
         "a": 1,
-        "rgb": 36651
+        "rgb": 16121702
       }
     },
     {
-      "query": "path:Proyectos/VideoJuego  ",
+      "query": "path:\"03 -Tecnologias\" ",
       "color": {
         "a": 1,
-        "rgb": 16711680
-      }
-    },
-    {
-      "query": "path:Tecnologias/Frontend  ",
-      "color": {
-        "a": 1,
-        "rgb": 16776960
-      }
-    },
-    {
-      "query": "path:Diario  ",
-      "color": {
-        "a": 1,
-        "rgb": 16734464
+        "rgb": 5431378
       }
     }
   ],
@@ -60,6 +46,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 99,
-  "scale": 0.5087618855792609,
+  "scale": 0.36288736930121324,
   "close": false
 }
