@@ -176,7 +176,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 699.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -189,8 +189,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "191168f62188f95a",
+  "active": "bc95c5bb8f69a5ac",
   "lastOpenFiles": [
+    "01 - Proyectos/WedRopa/productos.css",
+    "01 - Proyectos/WedRopa/assets/plus.svg",
+    "01 - Proyectos/WedRopa/assets/shopping-cart.svg",
+    "01 - Proyectos/WedRopa/assets/user.svg",
+    "01 - Proyectos/WedRopa/assets/search.svg",
+    "01 - Proyectos/WedRopa/productos.html",
+    "01 - Proyectos/WedRopa/productos.hmtl",
+    "01 - Proyectos/WedRopa/assets/placeholder.jpg",
+    "01 - Proyectos/WedRopa/assets",
+    "01 - Proyectos/WedRopa",
+    "01 - Proyectos/Nueva carpeta",
     "03 -Tecnologias/Frontend/Estilizacion y UI/Css/Grid.md",
     "05 - Insti/DINT/UD3/UD3.md",
     "03 -Tecnologias/Frontend/Estilizacion y UI/Css/Flex.md",
@@ -206,16 +217,10 @@
     "05 - Insti/DINT/UD3/Examen/gatitos/img/galeria/4.jpg",
     "05 - Insti/DINT/UD3/Examen/gatitos/img/galeria/3.jpg",
     "05 - Insti/DINT/UD3/Examen/gatitos/img/galeria/2.jpg",
-    "05 - Insti/DINT/UD3/Examen/gatitos/img/galeria/1.jpg",
     "05 - Insti/DINT/UD3/Examen/gatitos/scss/partials/_menu.scss",
     "05 - Insti/DINT/UD3/Examen/gatitos/scss/partials/_gatosIMG.scss",
     "05 - Insti/DINT/UD3/Examen/gatitos/scss/partials/_galeria-simple.scss",
     "05 - Insti/DINT/UD3/Examen/gatitos/img/galeria",
-    "05 - Insti/DINT/UD3/Examen/gatitos/scss/partials",
-    "05 - Insti/DINT/UD3/Examen/gatitos/scss/base.scss",
-    "05 - Insti/DINT/UD3/Examen/gatitos/css/estilos.css.map",
-    "05 - Insti/DINT/UD3/Examen/gatitos/css/estilos.css",
-    "05 - Insti/DINT/UD3/Examen/Flex/css/estilos.css",
     "02 - Diary/Entradas/19-3-2025.md",
     "conflict-files-obsidian-git.md",
     "05 - Insti/AD/Ud1-Ficheros/R1-UD1/R1-UD1.md",
@@ -233,7 +238,6 @@
     "03 -Tecnologias/Game Development/Motores de Juegos/Unity/Unity2D.md",
     "03 -Tecnologias/Game Development/Motores de Juegos/Unity/Unity3D.md",
     "05 - Insti/DINT/Sin título.canvas",
-    "02 - Diary/Entradas/16-3-2025.md",
     "Sin título 1.canvas",
     "Sin título.canvas",
     "Programacion/_Proyectos/VideoJuego/Planificacion.canvas"
