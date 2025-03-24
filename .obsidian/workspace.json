@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 -Tecnologias/Frontend/Estilizacion y UI/Css/Grid.md",
+                "file": "02 - Diary/24-3-2025.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Grid"
+              "title": "24-3-2025"
             }
           },
           {
@@ -58,7 +58,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -194,17 +194,19 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bc95c5bb8f69a5ac",
+  "active": "7b7e3fd1bf0a10b3",
   "lastOpenFiles": [
+    "03 -Tecnologias/Frontend/Estilizacion y UI/Css/Grid.md",
+    "02 - Diary/24-3-2025.md",
     "01 - Proyectos/WedRopa/assets/Banner.svg",
     "01 - Proyectos/WedRopa/assets/Sin confirmar 977682.crdownload",
     "02 - Diary/Entradas/22-3-2025.md",
@@ -220,8 +222,6 @@
     "01 - Proyectos/WedRopa/assets/placeholder.jpg",
     "01 - Proyectos/WedRopa/assets",
     "01 - Proyectos/WedRopa",
-    "02 - Diary/24-3-2025.md",
-    "03 -Tecnologias/Frontend/Estilizacion y UI/Css/Grid.md",
     "05 - Insti/DINT/UD3/Untitled.canvas",
     "05 - Insti/DINT/UD3/Examen/gatitos/scss/partials/_gatosIMG.scss",
     "05 - Insti/DINT/UD3/Examen/gatitos/scss/partials/_gatosIMg.scss",
@@ -232,7 +232,6 @@
     "05 - Insti/DINT/UD3/Examen/gatitos/img/galeria/5.jpg",
     "05 - Insti/DINT/UD3/Examen/gatitos/img/galeria/4.jpg",
     "05 - Insti/DINT/UD3/Examen/gatitos/img/galeria/3.jpg",
-    "05 - Insti/DINT/UD3/Examen/gatitos/img/galeria/2.jpg",
     "05 - Insti/DINT/UD3/UD3.md",
     "03 -Tecnologias/Frontend/Estilizacion y UI/Css/Flex.md",
     "02 - Diary/21-3-2025.md",
