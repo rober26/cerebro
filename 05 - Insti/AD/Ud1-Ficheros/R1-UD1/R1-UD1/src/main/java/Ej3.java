@@ -19,7 +19,7 @@ class Persona implements Serializable {
 
 public class Ej3 {
     public static void main(String[] args) {
-        String archivo = "personas.dat"; // Nombre del archivo binario
+        String archivo = "personas.bin"; // Nombre del archivo binario
 
         // **Paso 1: Guardar objetos en un archivo binario**
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(archivo))) {

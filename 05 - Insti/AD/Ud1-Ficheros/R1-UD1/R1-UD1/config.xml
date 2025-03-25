@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
-<comment>configuracion en XML</comment>
+<comment>Configuración en XML</comment>
 <entry key="NivelPermisos">4</entry>
 <entry key="usuario">admin</entry>
 <entry key="contraseña">1234</entry>

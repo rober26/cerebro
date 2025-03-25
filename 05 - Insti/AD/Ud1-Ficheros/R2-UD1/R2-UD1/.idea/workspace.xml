@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="376d3ea8-1b87-42e9-abb8-a7eba28c6b8b" name="Changes" comment="" />
+    <list default="true" id="8f1c04be-4a63-4c4b-9fc8-a90b17d27a70" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,9 +18,9 @@
     </option>
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
+  &quot;associatedIndex&quot;: 6
 }</component>
-  <component name="ProjectId" id="2umabJVHiFaThW4KXMzeZLc7Iut" />
+  <component name="ProjectId" id="2uoC786vqXHqsUj6lGTxaL4eVRq" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -28,12 +28,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Ej1.executor": "Run",
-    "Application.Ej2.executor": "Run",
-    "Application.Ej3.executor": "Run",
-    "Application.Ej4.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/alumno/Escritorio/Workspace/cerebro/05 - Insti/AD/Ud1-Ficheros/R1-UD1/R1-UD1",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -42,11 +38,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="376d3ea8-1b87-42e9-abb8-a7eba28c6b8b" name="Changes" comment="" />
-      <created>1742856279658</created>
+      <changelist id="8f1c04be-4a63-4c4b-9fc8-a90b17d27a70" name="Changes" comment="" />
+      <created>1742905370276</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1742856279658</updated>
+      <updated>1742905370276</updated>
     </task>
     <servers />
   </component>

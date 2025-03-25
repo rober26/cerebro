@@ -14,9 +14,13 @@ class Libro {
         this.anio = anio;
     }
 
+    public String toCSV() {
+        return titulo + "," + autor + "," + anio;
+    }
+
     @Override
     public String toString() {
-        return titulo + "," + autor + "," + anio;
+        return titulo + "," + autor + "," + anio+"\n";
     }
 }
 
@@ -35,7 +39,7 @@ public class Ej2 {
         try (PrintWriter writer = new PrintWriter(archivoCSV, StandardCharsets.UTF_8)) {
             writer.println("Titulo,Autor,Año");
             for (Libro libro : libros) {
-                writer.println(libro);
+                writer.println(libro.toCSV());
             }
             System.out.println("Archivo CSV guardado correctamente.");
         } catch (IOException e) {
@@ -46,9 +50,16 @@ public class Ej2 {
         System.out.println("\nLeyendo el archivo CSV:");
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(archivoCSV), StandardCharsets.UTF_8))) {
             String linea;
+            List<Libro> librosNuevos = new ArrayList<>();
             while ((linea = reader.readLine()) != null) {
-                System.out.println(linea);
+                String[] datos =  linea.split(",");
+                if(datos[2].matches("[0-9]+")){
+                    librosNuevos.add( new Libro(datos[0],datos[1],Integer.parseInt(datos[2])));
+                }else {
+                    System.out.printf(" Titulo, autor, año \n");
+                }
             }
+            System.out.printf(librosNuevos.toString());
         } catch (IOException e) {
             System.err.println("Error al leer el archivo CSV: " + e.getMessage());
         }
