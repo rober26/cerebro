@@ -1,4 +1,4 @@
-CSS Grid Layout es un sistema de diseño bidimensional que permite crear diseños de página complejos de manera sencilla. Se basa en un modelo de filas y columnas, lo que facilita la colocación de elementos en una cuadrícula de manera flexible y controlada.
+[[CSS]] Grid Layout es un sistema de diseño bidimensional que permite crear diseños de página complejos de manera sencilla. Se basa en un modelo de filas y columnas, lo que facilita la colocación de elementos en una cuadrícula de manera flexible y controlada.
 
 ---
 

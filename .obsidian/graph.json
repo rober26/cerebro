@@ -1,11 +1,11 @@
 {
   "collapse-filter": false,
-  "search": "",
+  "search": "-path:\"02 - Diary\"  ",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "path:\"00 - Templates\"  ",
@@ -25,27 +25,41 @@
       "query": "path:\"02 - Diary\"  ",
       "color": {
         "a": 1,
-        "rgb": 16121702
+        "rgb": 11657298
       }
     },
     {
-      "query": "path:\"03 -Tecnologias\" ",
+      "query": "path:\"03 -Tecnologias\"  ",
       "color": {
         "a": 1,
         "rgb": 5431378
+      }
+    },
+    {
+      "query": "path:\"05 - Insti\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
+    },
+    {
+      "query": "path:\"06 - CarnetConducir\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
       }
     }
   ],
   "collapse-display": true,
   "showArrow": false,
-  "textFadeMultiplier": -1,
+  "textFadeMultiplier": -2,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
   "collapse-forces": true,
-  "centerStrength": 0.354166666666667,
-  "repelStrength": 10,
-  "linkStrength": 1,
-  "linkDistance": 99,
-  "scale": 0.36288736930121324,
-  "close": false
+  "centerStrength": 0.625,
+  "repelStrength": 15.9375,
+  "linkStrength": 0.99,
+  "linkDistance": 250,
+  "scale": 0.3628873693012143,
+  "close": true
 }

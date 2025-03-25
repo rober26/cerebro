@@ -1,4 +1,4 @@
-El enfoque **Mobile First** prioriza el diseño para dispositivos móviles y luego lo adapta a pantallas más grandes utilizando media queries.
+El enfoque **Mobile First** en [[CSS]]prioriza el diseño para dispositivos móviles y luego lo adapta a pantallas más grandes utilizando media queries.
 
 ---
 ### **1. Media Queries en Mobile First**
