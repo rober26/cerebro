@@ -1,17 +1,21 @@
 Motor de juego: [[Unity3D]]
 ## Historia General del Mundo
 
- Nombre del Mundo:  
+Nombre del Mundo:  Selentur
 Ambientación: Fantasía medieval con elementos de magia y tecnología antigua.
+
+Existen dioses los cuales son los padres de las razas:
+	El dios humano(EL)-> Humanos
+	Las hadas elementales ->Elfos,Dragones
+		Aire
+		Agua
+		Fuego
+		Tierra
+	El dios demonio ->Demonios y semi demonios.
+	El dios animal  ->Animales y semihumanos.
 
 Resumen de la Historia:
 
-Existen dioses los cuales son los padres de las razas.  
-El dios humano(EL)  
-Las hadas elementales  
-El dios demonio  
-El dios animal  
-  
 
 Opciones:
 

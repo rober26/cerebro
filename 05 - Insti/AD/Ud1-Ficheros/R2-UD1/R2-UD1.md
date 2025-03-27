@@ -12,15 +12,6 @@
     
     - Repite lo anterior pero usa **aliases** para las clases y atributos. Esto hará que el XML generado tenga nombres más legibles y fáciles de personalizar.
     
-3. **Reflexión**:
-    
-    - Compara la comodidad de usar XStream con otros métodos que se mencionan en el tutorial.
-    
-4. **Ejercicios adicionales**:
-    
-    - Realiza ejercicios de personalización del XML, como usar atributos en las etiquetas o manejar colecciones de objetos.
-    
-
 ---
 
 ### **Apartado 2: Conversión entre XML y JSON**

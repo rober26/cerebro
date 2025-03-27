@@ -1,5 +1,6 @@
 import com.thoughtworks.xstream.XStream;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,15 +44,30 @@ public class Ej1 {
         libros.add(new Libro("Don Quijote ", "Cervantes", 1486));
         libros.add(new Libro("Alas de sangre", "Carla", 2021));
         libros.add(new Libro("La sirenita", "Disney", 1943));
+
+
+        //alias
+        xStream.alias("libro",Libro.class);
+        //Pasar lista a XML
         String xml = xStream.toXML(libros);
-
-        for (xml.le){
-
+        //Guardar XML en un archivo
+        String archivoXML = "Libros.xml";
+        try (FileWriter writer = new FileWriter(archivoXML);){
+            writer.write(xml);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
-        xml.split(",");
-
-
+        //Pasar archivo XML a lista
+        try (FileReader reader = new FileReader(archivoXML);){
+            List<Libro> librodesearizado = (List<Libro>) xStream.fromXML(reader);
+            for (Libro libro : librodesearizado){
+                System.out.println(libro);
+            }
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
     }
-
 }

@@ -38,7 +38,7 @@ O descargar la librería desde XStream.
 `import com.thoughtworks.xstream.XStream;` 
 `public class Main {`     
 	`public static void main(String[] args) {`         
-		`XStream xstream = new XStream();
+		`XStream xstream = new XStream();`
 		`Persona persona = new Persona("Juan", 30);`          
 		`String xml = xstream.toXML(persona);`         
 		`System.out.println(xml);`     
@@ -48,9 +48,9 @@ O descargar la librería desde XStream.
 	`private String nombre;`     
 	`private int edad;`      
 	
-	public Persona(String nombre, int edad) {
-		this.nombre = nombre; 
-		this.edad = edad; 
+	public Persona(String nombre, int edad) {`
+		`this.nombre = nombre;` 
+		`this.edad = edad;` 
 	}
 `}`
 
@@ -103,7 +103,7 @@ Generará:
 	`"persona": {`     
 		`"nombre": "Juan",`     
 		`"edad": 30   
-	}`
+	`}`
 `}`
 
 ---
