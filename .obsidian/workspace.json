@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "83ae446a2ce5b208",
+        "id": "b8b297d8fb6ea88f",
         "type": "tabs",
         "children": [
           {
-            "id": "e838021fb1d3b127",
+            "id": "2e79711aaa94e143",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Diary/3-4-2025.md",
+                "file": "05 - Insti/AD/Ud1-Ficheros/Apuntes/Properties.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3-4-2025"
+              "title": "Properties"
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 264.5
   },
   "right": {
     "id": "3a0d1dcf92de26ae",
@@ -180,63 +180,63 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bc95c5bb8f69a5ac",
+  "active": "48d50adf468d7e3f",
   "lastOpenFiles": [
-    "05 - Insti/INGLES/Exercise/Grammar/Grammar 3.md",
-    "05 - Insti/INGLES/Exercise/Grammar/Grammar 1.md",
-    "05 - Insti/INGLES/Exercise/Grammar/Untitled",
-    "05 - Insti/INGLES/Exercise/Exercise.md",
-    "05 - Insti/INGLES/Exercise/Vocabulary",
-    "05 - Insti/INGLES/Exercise/Gramar.md",
-    "05 - Insti/INGLES/Exercise/Grammar",
-    "05 - Insti/INGLES/Exercise",
-    "Compra.md",
-    "05 - Insti/INGLES",
-    "Platos.md",
+    "05 - Insti/Ingles/Exercise/Grammar/Grammar 3.md",
+    "05 - Insti/Ingles/Exercise/Grammar/Grammar 1.md",
+    "05 - Insti/Ingles/Exercise/Grammar",
+    "05 - Insti/Ingles/Exercise/Exercise.md",
     "02 - Diary/3-4-2025.md",
-    "10 - Diary/Entradas/25-3-2025.md",
-    "10 - Diary/Entradas/24-3-2025.md",
-    "10 - Diary/Entradas/23-3-2025.md",
-    "10 - Diary/Entradas/22-3-2025.md",
-    "10 - Diary/Entradas/21-3-2025.md",
-    "10 - Diary/Entradas/20-3-2025.md",
-    "10 - Diary/Entradas/19-3-2025.md",
-    "10 - Diary/Entradas/18-3-2025.md",
-    "10 - Diary/Entradas/17-3-2025.md",
-    "10 - Diary/Entradas/16-3-2025.md",
-    "10 - Diary/Entradas",
-    "10 - Diary",
-    "05 - Insti/AD/Ud1-Ficheros/R2-UD1/R2-UD1/src/main/java/Ej2.java",
-    "05 - Insti/AD/Ud1-Ficheros/R2-UD1/R2-UD1/Libros.xml",
-    "05 - Insti/AD/Ud1-Ficheros/R2-UD1/R2-UD1/Libros.JSON",
+    "02 - Diary",
+    "05 - Insti/AD/Ud1-Ficheros/Apuntes/Properties.md",
+    "05 - Insti/Ingles/Exercise",
+    "05 - Insti/AD/Ud1-Ficheros/Apuntes/GSON.md",
     "05 - Insti/AD/Ud1-Ficheros/Apuntes/Gestión de archivos.md",
+    "05 - Insti/AD/Ud1-Ficheros/Apuntes/CSV.md",
+    "05 - Insti/AD/Ud1-Ficheros/AdRecu/recu-ud1.pdf",
+    "05 - Insti/AD/Ud1-Ficheros/Apuntes/XStream.md",
+    "05 - Insti/AD/Ud1-Ficheros/AdRecu/RecuUD1.java~",
+    "05 - Insti/AD/Ud1-Ficheros/Apuntes/RandomAccesFile.md",
+    "05 - Insti/AD/Ud1-Ficheros/Apuntes/Serializacón.md",
+    "05 - Insti/AD/Ud1-Ficheros/AdRecu/Ej1.java~",
+    "05 - Insti/AD/Ud1-Ficheros/AdRecu/ciudades.csv",
+    "05 - Insti/AD/Ud1-Ficheros/AdRecu/out/production/AdRecu/City.class",
+    "05 - Insti/AD/Ud1-Ficheros/AdRecu/out/production/AdRecu/Ej1.class",
+    "05 - Insti/AD/Ud1-Ficheros/R1-UD1/R1-UD1.md",
+    "05 - Insti/AD/Ud1-Ficheros/AdRecu/City.java~",
+    "05 - Insti/AD/Ud1-Ficheros/R2-UD1/R2-UD1.md",
+    "02 - Proyectos/Apps/GestionGastos/Gg.md",
+    "02 - Proyectos/Webs/WedRopa/WedRopa.md",
+    "05 - Insti/DINT/UD3/Wed/Wed Ropa.md",
+    "Compra.md",
+    "Platos.md",
+    "00 - Templates/Template planificación Apps.md",
+    "02 - Proyectos/Apps/Kaizen/Kaizen(App).md",
+    "02 - Proyectos/Apps/Kaizen/kaizen.md",
+    "00 - Templates/Template planificación videojuegos.md",
+    "00 - Templates/Template planificación Web.md",
+    "02 - Proyectos/VIdeojuegos/Selentur/Selentur.md",
+    "02 - Proyectos/Imp3D/Imp3D.md",
+    "02 - Proyectos/Webs/WedRopa/assets/Banner.svg",
     "02 - Proyectos/Webs/WedRopa/assets/user.svg",
     "02 - Proyectos/Webs/WedRopa/assets/shopping-cart.svg",
     "02 - Proyectos/Webs/WedRopa/assets/search.svg",
     "02 - Proyectos/Webs/WedRopa/assets/plus.svg",
     "02 - Proyectos/Webs/WedRopa/assets/placeholder.jpg",
-    "02 - Proyectos/Webs/WedRopa/assets/pexels-prolificpeople-29734037.jpg",
-    "02 - Proyectos/Webs/WedRopa/assets/pexels-marlonretratos-26964993.jpg",
-    "02 - Proyectos/Webs/WedRopa/assets/pexels-john-tekeridis-21837-11288126.jpg",
-    "02 - Proyectos/Webs/WedRopa/assets/pexels-jeremy-alford-211956852-31272806.jpg",
-    "02 - Proyectos/Webs/WedRopa/assets/pexels-behrouz-sasani-3568050-7252734.jpg",
-    "02 - Proyectos/Webs/WedRopa/WedRopa.md",
-    "02 - Proyectos/VIdeojuegos/Selentur/Selentur.md",
-    "02 - Proyectos/Bots/Discord/BotMusica.md",
-    "02 - Proyectos/Apps/Kaizen/Kaizen(App).md",
-    "02 - Proyectos/Apps/GestionGastos/Gg.md",
-    "02 - Proyectos/Imp3D/Imp3D.md",
-    "01 -Tecnologias/Game Development/Motores de Juegos/Unity/Unity3D.md",
-    "01 -Tecnologias/Game Development/Motores de Juegos/Unity/Unity2D.md",
+    "02 - Proyectos/VIdeojuegos/Selentur/Selentur/Library/PackageCache/com.unity.collab-proxy@2.7.1/Editor/Assets/Images/secondarytabclose.png",
+    "02 - Proyectos/VIdeojuegos/Selentur/Selentur/Library/PackageCache/com.unity.collab-proxy@2.7.1/Editor/Assets/Images/refresh@2x.png",
+    "02 - Proyectos/VIdeojuegos/Selentur/Selentur/Library/PackageCache/com.unity.collab-proxy@2.7.1/Editor/Assets/Images/xlink.png",
+    "02 - Proyectos/VIdeojuegos/Selentur/Selentur/Library/PackageCache/com.unity.collab-proxy@2.7.1/Editor/Assets/Images/stepok@2x.png",
+    "01 - Proyectos/Sin título.canvas",
     "05 - Insti/DINT/UD3/Untitled.canvas",
     "05 - Insti/DINT/Sin título.canvas",
     "Sin título 1.canvas",
