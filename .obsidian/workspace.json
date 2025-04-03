@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "5bd8db16077f564e",
+        "id": "b8b297d8fb6ea88f",
         "type": "tabs",
         "children": [
           {
-            "id": "18a084bb7ad96c83",
+            "id": "4f8956c73f45bbe4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Templates/Template planificación Apps.md",
+                "file": "05 - Insti/AD/Ud1-Ficheros/Apuntes/XStream.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Template planificación Apps"
+              "title": "XStream"
+            }
+          },
+          {
+            "id": "2e79711aaa94e143",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05 - Insti/AD/Ud1-Ficheros/Apuntes/Gestión de archivos.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Gestión de archivos"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -44,7 +59,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -78,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 264.5
   },
   "right": {
     "id": "3a0d1dcf92de26ae",
@@ -180,63 +195,100 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "48d50adf468d7e3f",
+  "floating": {
+    "id": "99e60134b1a7f09a",
+    "type": "floating",
+    "children": [
+      {
+        "id": "dc6b76820cfde0c1",
+        "type": "window",
+        "children": [
+          {
+            "id": "c9c64418e9c118ec",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "230787e5b2fc8343",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "05 - Insti/AD/Ud1-Ficheros/AdRecu/recu-ud1.pdf"
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "recu-ud1"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": -934,
+        "y": 0,
+        "width": 934,
+        "height": 1032,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "2e79711aaa94e143",
   "lastOpenFiles": [
-    "00 - Templates/Template planificación videojuegos.md",
+    "05 - Insti/AD/Ud1-Ficheros/AdRecu/RecuUD1.java~",
+    "05 - Insti/AD/Ud1-Ficheros/Apuntes/RandomAccesFile.md",
+    "05 - Insti/AD/Ud1-Ficheros/Apuntes/Gestión de archivos.md",
+    "05 - Insti/AD/Ud1-Ficheros/Apuntes/Properties.md",
+    "05 - Insti/AD/Ud1-Ficheros/AdRecu/recu-ud1.pdf",
+    "05 - Insti/AD/Ud1-Ficheros/Apuntes/GSON.md",
+    "05 - Insti/AD/Ud1-Ficheros/Apuntes/CSV.md",
+    "05 - Insti/AD/Ud1-Ficheros/Apuntes/Serializacón.md",
+    "05 - Insti/AD/Ud1-Ficheros/Apuntes/XStream.md",
+    "05 - Insti/AD/Ud1-Ficheros/AdRecu/Ej1.java~",
+    "05 - Insti/AD/Ud1-Ficheros/AdRecu/ciudades.csv",
+    "05 - Insti/AD/Ud1-Ficheros/AdRecu/out/production/AdRecu/City.class",
+    "05 - Insti/AD/Ud1-Ficheros/AdRecu/out/production/AdRecu/Ej1.class",
+    "05 - Insti/AD/Ud1-Ficheros/R1-UD1/R1-UD1.md",
+    "05 - Insti/AD/Ud1-Ficheros/AdRecu/City.java~",
+    "05 - Insti/AD/Ud1-Ficheros/AdRecu/out/production/AdRecu/RecuUD1.class",
+    "05 - Insti/AD/Ud1-Ficheros/AdRecu/out/production/AdRecu/recu-ud1.pdf",
+    "05 - Insti/AD/Ud1-Ficheros/AdRecu/out/production/AdRecu/ejemplos.zip",
+    "05 - Insti/AD/Ud1-Ficheros/R2-UD1/R2-UD1.md",
+    "02 - Proyectos/Apps/GestionGastos/Gg.md",
+    "02 - Proyectos/Webs/WedRopa/WedRopa.md",
+    "05 - Insti/DINT/UD3/Wed/Wed Ropa.md",
+    "Compra.md",
+    "Platos.md",
     "00 - Templates/Template planificación Apps.md",
-    "00 - Templates/Template Diario.md",
+    "02 - Proyectos/Apps/Kaizen/Kaizen(App).md",
+    "02 - Proyectos/Apps/Kaizen/kaizen.md",
+    "00 - Templates/Template planificación videojuegos.md",
     "00 - Templates/Template planificación Web.md",
     "02 - Proyectos/VIdeojuegos/Selentur/Selentur.md",
-    "02 - Proyectos/Webs/WedRopa/WedRopa.md",
-    "05 - Insti/AD/Ud1-Ficheros/R1-UD1/R1-UD1.md",
-    "10 - Diary/Entradas/24-3-2025.md",
-    "10 - Diary/Entradas/23-3-2025.md",
-    "10 - Diary/Entradas/22-3-2025.md",
-    "10 - Diary/Entradas/21-3-2025.md",
-    "10 - Diary/Entradas/20-3-2025.md",
-    "10 - Diary/Entradas/19-3-2025.md",
-    "10 - Diary/Entradas/18-3-2025.md",
-    "10 - Diary/Entradas/17-3-2025.md",
-    "10 - Diary/Entradas/16-3-2025.md",
-    "10 - Diary/Entradas",
-    "10 - Diary/25-3-2025.md",
-    "10 - Diary",
-    "05 - Insti/AD/Ud1-Ficheros/R2-UD1/R2-UD1/src/main/java/Ej2.java",
-    "05 - Insti/AD/Ud1-Ficheros/R2-UD1/R2-UD1/Libros.xml",
-    "05 - Insti/AD/Ud1-Ficheros/R2-UD1/R2-UD1/Libros.JSON",
-    "02 - Proyectos/Webs/WedRopa/styles.css",
-    "02 - Proyectos/Webs/WedRopa/product.html",
-    "02 - Proyectos/Webs/WedRopa/main.html",
+    "02 - Proyectos/Imp3D/Imp3D.md",
+    "01 -Tecnologias/Imp3D/Fusion360.md",
+    "10 - Diary/Entradas/25-3-2025.md",
+    "02 - Proyectos/Webs/WedRopa/assets/Banner.svg",
     "02 - Proyectos/Webs/WedRopa/assets/user.svg",
     "02 - Proyectos/Webs/WedRopa/assets/shopping-cart.svg",
     "02 - Proyectos/Webs/WedRopa/assets/search.svg",
     "02 - Proyectos/Webs/WedRopa/assets/plus.svg",
     "02 - Proyectos/Webs/WedRopa/assets/placeholder.jpg",
-    "02 - Proyectos/Webs/WedRopa/assets/Banner.svg",
-    "02 - Proyectos/Webs/WedRopa/assets",
-    "02 - Proyectos/Webs/Kaizen/Kaizen(App).md",
-    "02 - Proyectos/Webs/WedRopa",
-    "02 - Proyectos/Bots/BotMusica.md",
-    "01 -Tecnologias/Frontend/Lenguajes y Frameworks/TypeScript/TypeScript.md",
-    "01 -Tecnologias/Frontend/Lenguajes y Frameworks/React/React.md",
-    "01 -Tecnologias/Frontend/Lenguajes y Frameworks/JavaScript/JavaScript.md",
-    "01 -Tecnologias/Game Development/Motores de Juegos/Unity/Unity3D.md",
-    "01 -Tecnologias/Game Development/Motores de Juegos/Unity/Unity2D.md",
-    "01 -Tecnologias/Game Development/Motores de Juegos/Godot/Shadder en Godot.md",
-    "01 -Tecnologias/Game Development/Motores de Juegos/Godot/Godot.md",
-    "01 - Proyectos/WedRopa/assets/Banner.svg",
-    "01 - Proyectos/WedRopa/assets/user.svg",
-    "01 - Proyectos/WedRopa/assets/shopping-cart.svg",
-    "01 - Proyectos/WedRopa/assets/search.svg",
+    "02 - Proyectos/Bots/Discord/BotMusica.md",
+    "02 - Proyectos/VIdeojuegos/Selentur/Planificacion.md",
+    "02 - Proyectos/VIdeojuegos/Selentur/Selentur/Library/PackageCache/com.unity.collab-proxy@2.7.1/Editor/Assets/Images/secondarytabclose.png",
+    "02 - Proyectos/VIdeojuegos/Selentur/Selentur/Library/PackageCache/com.unity.collab-proxy@2.7.1/Editor/Assets/Images/refresh@2x.png",
+    "02 - Proyectos/VIdeojuegos/Selentur/Selentur/Library/PackageCache/com.unity.collab-proxy@2.7.1/Editor/Assets/Images/xlink.png",
+    "02 - Proyectos/VIdeojuegos/Selentur/Selentur/Library/PackageCache/com.unity.collab-proxy@2.7.1/Editor/Assets/Images/stepok@2x.png",
+    "01 - Proyectos/Sin título.canvas",
     "05 - Insti/DINT/UD3/Untitled.canvas",
     "05 - Insti/DINT/Sin título.canvas",
     "Sin título 1.canvas",
