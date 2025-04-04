@@ -47,7 +47,8 @@ Si usas **Gradle**, agrégalo en `build.gradle`:
 	`public static void main(String[] args) {`         
 		`String json = "{\"nombre\":\"Ana\",\"edad\":30}";  // Convertir JSON a objeto Java`         
 		`Gson gson = new Gson();`        
-		`Persona persona = gson.fromJson(json, Persona.class);          System.out.println("Nombre: " + persona.nombre);         System.out.println("Edad: " + persona.edad);`     
+		`Persona persona = gson.fromJson(json, Persona.class);
+		`System.out.println("Nombre: " + persona.nombre); System.out.println("Edad: " + persona.edad);`
 	`}` 
 `}`
 

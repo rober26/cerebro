@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "path:\"00 - Templates\"  ",
@@ -53,6 +53,6 @@
   "repelStrength": 15.9375,
   "linkStrength": 0.99,
   "linkDistance": 250,
-  "scale": 0.3628873693012143,
-  "close": false
+  "scale": 0.25883865621816493,
+  "close": true
 }
