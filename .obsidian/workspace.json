@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 - Insti/AD/Ud1-Ficheros/Apuntes/Properties.md",
+                "file": "01 -Tecnologias/Electronica/Fuentes de alimentacion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Properties"
+              "title": "Fuentes de alimentacion"
             }
           }
         ]
@@ -189,15 +189,28 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "48d50adf468d7e3f",
+  "active": "2e79711aaa94e143",
   "lastOpenFiles": [
+    "01 -Tecnologias/Electronica/Electricidad.md",
+    "01 -Tecnologias/Electronica/Fuentes de alimentacion.md",
+    "01 -Tecnologias/Electronica/Arduino/Arduino.md",
+    "01 -Tecnologias/Electronica/Arduino",
+    "01 -Tecnologias/SEO.md",
+    "01 -Tecnologias/Electronica/Electronica.md",
+    "01 -Tecnologias/Electronica/NFC.md",
+    "02 - Proyectos/Electrónica/NFC.md",
+    "02 - Diary/3-4-2025.md",
+    "02 - Proyectos/Electronica",
+    "01 -Tecnologias/Electronica",
+    "02 - Proyectos/Electrónica/baterías con cargador solar.md",
+    "05 - Insti/AD/Ud1-Ficheros/Apuntes/Properties.md",
+    "02 - Proyectos/Electrónica/baterías con cargador solar.md.odt",
+    "02 - Proyectos/Electrónica",
     "05 - Insti/Ingles/Exercise/Grammar/Grammar 3.md",
     "05 - Insti/Ingles/Exercise/Grammar/Grammar 1.md",
     "05 - Insti/Ingles/Exercise/Grammar",
     "05 - Insti/Ingles/Exercise/Exercise.md",
-    "02 - Diary/3-4-2025.md",
     "02 - Diary",
-    "05 - Insti/AD/Ud1-Ficheros/Apuntes/Properties.md",
     "05 - Insti/Ingles/Exercise",
     "05 - Insti/AD/Ud1-Ficheros/Apuntes/GSON.md",
     "05 - Insti/AD/Ud1-Ficheros/Apuntes/Gestión de archivos.md",
@@ -207,25 +220,13 @@
     "05 - Insti/AD/Ud1-Ficheros/AdRecu/RecuUD1.java~",
     "05 - Insti/AD/Ud1-Ficheros/Apuntes/RandomAccesFile.md",
     "05 - Insti/AD/Ud1-Ficheros/Apuntes/Serializacón.md",
-    "05 - Insti/AD/Ud1-Ficheros/AdRecu/Ej1.java~",
-    "05 - Insti/AD/Ud1-Ficheros/AdRecu/ciudades.csv",
-    "05 - Insti/AD/Ud1-Ficheros/AdRecu/out/production/AdRecu/City.class",
-    "05 - Insti/AD/Ud1-Ficheros/AdRecu/out/production/AdRecu/Ej1.class",
     "05 - Insti/AD/Ud1-Ficheros/R1-UD1/R1-UD1.md",
-    "05 - Insti/AD/Ud1-Ficheros/AdRecu/City.java~",
     "05 - Insti/AD/Ud1-Ficheros/R2-UD1/R2-UD1.md",
     "02 - Proyectos/Apps/GestionGastos/Gg.md",
     "02 - Proyectos/Webs/WedRopa/WedRopa.md",
     "05 - Insti/DINT/UD3/Wed/Wed Ropa.md",
     "Compra.md",
     "Platos.md",
-    "00 - Templates/Template planificación Apps.md",
-    "02 - Proyectos/Apps/Kaizen/Kaizen(App).md",
-    "02 - Proyectos/Apps/Kaizen/kaizen.md",
-    "00 - Templates/Template planificación videojuegos.md",
-    "00 - Templates/Template planificación Web.md",
-    "02 - Proyectos/VIdeojuegos/Selentur/Selentur.md",
-    "02 - Proyectos/Imp3D/Imp3D.md",
     "02 - Proyectos/Webs/WedRopa/assets/Banner.svg",
     "02 - Proyectos/Webs/WedRopa/assets/user.svg",
     "02 - Proyectos/Webs/WedRopa/assets/shopping-cart.svg",
