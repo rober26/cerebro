@@ -1,4 +1,4 @@
-[[JavaScript]] 
+[[01 -Tecnologias/Frontend/Lenguajes y Frameworks/JavaScript/JavaScript]] 
 Conceptos básicos
 DOM
 Promesas
