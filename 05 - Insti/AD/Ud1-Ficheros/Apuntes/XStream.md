@@ -86,25 +86,29 @@ Generará:
 
 `xstream.omitField(Persona.class, "edad");`
 
+Faltan atributos
+
 ---
 
 ## **5. Conversión a JSON**
 
 ### **5.1. Habilitar JSON en XStream**
-
-`import com.thoughtworks.xstream.io.json.JsonHierarchicalStreamDriver;`  
-`XStream xstream = new XStream(new JsonHierarchicalStreamDriver()); xstream.alias("persona", Persona.class);` 
-`String json = xstream.toXML(persona);` 
-`System.out.println(json);`
+```
+import com.thoughtworks.xstream.io.json.JsonHierarchicalStreamDriver;  
+XStream xstream = new XStream(new JsonHierarchicalStreamDriver()); xstream.alias("persona", Persona.class); 
+String json = xstream.toXML(persona); 
+System.out.println(json);
+```
 
 **Salida JSON:**
-
-`{`   
-	`"persona": {`     
-		`"nombre": "Juan",`     
-		`"edad": 30   
-	`}`
-`}`
+```
+{   
+	"persona": {     
+		"nombre": "Juan",     
+		"edad": 30   
+	}
+}
+```
 
 ---
 

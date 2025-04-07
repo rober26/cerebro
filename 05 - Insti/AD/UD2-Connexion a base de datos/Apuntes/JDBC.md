@@ -41,7 +41,10 @@ El proceso básico con JDBC implica los siguientes pasos:
     
 5. **Procesar los resultados**: Si se realiza una consulta SELECT, se obtiene el `ResultSet`, que contiene los datos devueltos por la base de datos.
     
-    `while (rs.next()) {     String nombre = rs.getString("nombre");     int salario = rs.getInt("salario");     System.out.println(nombre + " - " + salario); }`
+    `while (rs.next()) {`     
+    `String nombre = rs.getString("nombre");`     
+    `int salario = rs.getInt("salario");`     
+    `System.out.println(nombre + " - " + salario); }`
     
 6. **Cerrar los recursos**: Es importante cerrar las conexiones, statements y result sets una vez que se termina de trabajar con ellos.
     
@@ -54,7 +57,8 @@ A diferencia de `Statement`, `PreparedStatement` es más seguro y eficiente, ya 
 
 - **Creación de un PreparedStatement**:
     
-    `String sql = "SELECT * FROM empleados WHERE salario > ?"; PreparedStatement pstmt = conn.prepareStatement(sql); pstmt.setInt(1, 50000);  // Establece el valor del parámetro ResultSet rs = pstmt.executeQuery();`
+    `String sql = "SELECT * FROM empleados WHERE salario > ?";` 
+    `PreparedStatement pstmt = conn.prepareStatement(sql); pstmt.setInt(1, 50000);  // Establece el valor del parámetro ResultSet rs = pstmt.executeQuery();`
     
 - **Uso de parámetros en INSERT, UPDATE, DELETE**:
     

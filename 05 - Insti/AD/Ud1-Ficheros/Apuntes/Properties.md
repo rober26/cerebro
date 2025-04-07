@@ -14,18 +14,22 @@ La clase `Properties` es una subclase de `Hashtable` en Java que permite almacen
     
     - Carga las propiedades desde un archivo de entrada. Este archivo suele tener una extensión `.properties` y contiene pares clave-valor.
     - Ejemplo:
-        
-        `Properties propiedades = new Properties(); 
-        `FileInputStream fis = new FileInputStream("config.properties");` `propiedades.load(fis);`
-        
+        ```
+        Properties propiedades = new Properties(); 
+        FileInputStream fis = new FileInputStream("config.properties"); 
+        propiedades.load(fis);
+		```
 2. **`store(OutputStream outputStream, String comments)`**:
     
     - Guarda las propiedades en un archivo de salida, generalmente en formato `.properties`.
     - Ejemplo:
-        
-        `Properties propiedades = new Properties(); propiedades.setProperty("usuario", "admin"); propiedades.setProperty("contraseña", "12345"); 
-        `FileOutputStream fos = new FileOutputStream("config.properties");` 
-        `propiedades.store(fos, "Configuración del sistema");`
+        ```
+        Properties propiedades = new Properties(); 
+        propiedades.setProperty("usuario", "admin"); 
+        propiedades.setProperty("contraseña", "12345"); 
+        FileOutputStream fos = new FileOutputStream("config.properties"); 
+        propiedades.store(fos, "Configuración del sistema");
+		```
 
 3. **`storeToXML(OutputStream os, String comments)`:**
 	- Guarda las propiedades en un archivo de salida en formato **XML**.
@@ -33,38 +37,39 @@ La clase `Properties` es una subclase de `Hashtable` en Java que permite almacen
 	- Es útil cuando necesitas un formato más estructurado y legible que `.properties`.
     
 	- **Ejemplo**:
-    
-    `Properties propiedades = new Properties();` 
-    `propiedades.setProperty("usuario", "admin");` 
-    `propiedades.setProperty("contraseña", "12345");`  
-    `FileOutputStream fos = new FileOutputStream("config.xml");` 
-    `propiedades.storeToXML(fos, "Configuración del sistema");` 
-    `fos.close();`
-    
+    ```
+	    Properties propiedades = new Properties(); 
+	    propiedades.setProperty("usuario", "admin"); 
+	    propiedades.setProperty("contraseña", "12345");  
+	    FileOutputStream fos = new FileOutputStream("config.xml"); 
+	    propiedades.storeToXML(fos, "Configuración del sistema"); 
+	    fos.close();
+	```
 4. **`getProperty(String key)`**:
-    
     - Obtiene el valor asociado con la clave proporcionada.
     - Ejemplo:
-        
-        `String usuario = propiedades.getProperty("usuario");`
-        
+	```
+		String usuario = propiedades.getProperty("usuario");
+	```
 5. **`setProperty(String key, String value)`**:
     
     - Establece un valor para una clave dada. Si la clave ya existe, su valor será actualizado.
     - Ejemplo:
-        
-        `propiedades.setProperty("usuario", "admin");`
-        
+	```
+		propiedades.setProperty("usuario", "admin");
+	```
 6. **`stringPropertyNames()`**:
     
     - Devuelve un conjunto con todas las claves (como `String`) que están presentes en el objeto `Properties`.
     - Ejemplo:
-        
-        `Set<String> claves = propiedades.stringPropertyNames();`
-        
+	```
+		Set<String> claves = propiedades.stringPropertyNames();
+	```
+
 7. **`getProperty(String key, String defaultValue)`**:
     
     - Devuelve el valor asociado con una clave, o un valor por defecto si la clave no existe.
     - Ejemplo:
-        
-        `String usuario = propiedades.getProperty("usuario", "defaultUser");`
+	```
+		String usuario = propiedades.getProperty("usuario", "defaultUser");
+	```

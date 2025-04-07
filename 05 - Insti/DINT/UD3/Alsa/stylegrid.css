@@ -1,0 +1,53 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-container{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: [col-1-start] 2fr [col-1-end col-2-start] 1fr [col-2-end ];
+}
+.form-container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px 0px;
+    padding: 50px;
+    grid-column: col-1;
+}
+#travelForm{
+    height: 100%;
+}
+input{
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid grey ;
+    padding: 0 10px;
+}
+.checkbox{
+}
+button {
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    border: none;
+}
+#send{
+    padding: 0 10px;
+}
+.icon-button{
+    background-color: rgb(223, 223, 223);
+    cursor: pointer;
+    color: black;
+    padding: 0 10px;
+    height: 40px;
+}
+
+.form-resultados{
+    background-color: rgb(219, 253, 253);
+    border-radius: 10px;
+    border-left: 5px blue solid;
+    padding: 20px;
+    grid-column: col-2;
+}
+
+

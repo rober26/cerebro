@@ -8,10 +8,6 @@ La clase `RandomAccessFile` de Java permite leer y escribir archivos de manera *
 
 El constructor de `RandomAccessFile` requiere:
 
-java
-
-CopiarEditar
-
 `RandomAccessFile archivo = new RandomAccessFile("archivo.txt", "modo");`
 
 **Modos de Apertura:**
