@@ -12,12 +12,37 @@ El **DOM (Document Object Model)** es una interfaz de programación para documen
     
 
 Por ejemplo, el siguiente fragmento de HTML:
+```
+<!DOCTYPE html> 
+<html>   
+	<head>     
+		<title>Mi Página</title>   
+	</head>   
+	<body>     
+		<h1>Hola Mundo</h1>     
+		<p>Bienvenidos a mi página web.</p>   
+	</body> 
+</html>
+```
 
-`<!DOCTYPE html> <html>   <head>     <title>Mi Página</title>   </head>   <body>     <h1>Hola Mundo</h1>     <p>Bienvenidos a mi página web.</p>   </body> </html>`
 
 Será representado en el DOM de forma jerárquica como:
+```
+Document  
+├── html  
+│   
+├── head  
+│   
+│   
+└── title  
+│   
+└── body  
+│       
+├── h1  
+│       
+└── p
+```
 
-`Document  ├── html  │   ├── head  │   │   └── title  │   └── body  │       ├── h1  │       └── p`
 
 ---
 

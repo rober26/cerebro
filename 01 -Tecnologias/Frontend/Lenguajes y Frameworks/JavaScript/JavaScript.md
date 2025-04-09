@@ -9,18 +9,21 @@
 - **`var`**: Declaración de variables (es obsoleta en la mayoría de los casos).
 - **`let`**: Declaración de variables con alcance de bloque.
 - **`const`**: Declara una constante cuyo valor no puede cambiar.
-
-`let nombre = "Juan"; const edad = 30;`
+```
+let nombre = "Juan"; 
+const edad = 30;
+```
 
 ### Tipos de Datos:
 
 - **Primitivos**: `string`, `number`, `boolean`, `null`, `undefined`, `symbol` (ES6+).
 - **Compuestos**: `object` (arrays, objetos, etc.).
-
-`let texto = "Hola"; 
-`let numero = 42;` 
-`let esVerdadero = true;` 
-`let persona = { nombre: "Ana", edad: 25 }; let numeros = [1, 2, 3];`
+```
+let texto = "Hola"; 
+let numero = 42; 
+let esVerdadero = true; 
+let persona = { nombre: "Ana", edad: 25 }; let numeros = [1, 2, 3];
+```
 
 ### Operadores:
 
@@ -33,30 +36,52 @@
 ### Condicionales:
 
 - **if / else**: Para tomar decisiones basadas en condiciones.
-
-`let edad = 18; if (edad >= 18) {   console.log("Eres mayor de edad"); } else {   console.log("Eres menor de edad"); }`
+```
+let edad = 18; 
+if (edad >= 18) {   
+	console.log("Eres mayor de edad"); 
+} else {   
+	console.log("Eres menor de edad"); 
+}
+```
 
 ### Bucles:
 
 - **for**: Itera sobre un bloque de código un número determinado de veces.
-
-`for (let i = 0; i < 5; i++) {   console.log(i);  // Imprime del 0 al 4 }`
+```
+for (let i = 0; i < 5; i++) {   
+	console.log(i);  // Imprime del 0 al 4 
+}
+```
 
 - **while**: Ejecuta un bloque de código mientras se cumpla una condición.
-
-`let i = 0; while (i < 5) {   console.log(i);  // Imprime del 0 al 4   i++; }`
+```
+let i = 0; 
+while (i < 5) {   
+	console.log(i);  // Imprime del 0 al 4   
+	i++; 
+}
+```
 
 - **for...of**: Itera sobre los elementos de un array o de una colección iterable.
-
-`let numeros = [1, 2, 3]; for (let num of numeros) {   console.log(num);  // Imprime 1, 2, 3 }`
+```
+let numeros = [1, 2, 3]; 
+for (let num of numeros) {   
+	console.log(num);  // Imprime 1, 2, 3 
+}
+```
 
 ---
 
 ## **2. Funciones**
 
 ### **2.1 Declaración de funciones:**
-
-`function saludar(nombre) {   return "Hola " + nombre; }  console.log(saludar("Juan"));  // Imprime "Hola Juan"`
+```
+function saludar(nombre) {   
+	return "Hola " + nombre; 
+}  
+console.log(saludar("Juan"));  // Imprime "Hola Juan"
+```
 
 ### **2.2 Funciones de flecha (Arrow Functions):**
 
