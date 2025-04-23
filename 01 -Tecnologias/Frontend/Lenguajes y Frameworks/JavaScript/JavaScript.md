@@ -86,8 +86,10 @@ console.log(saludar("Juan"));  // Imprime "Hola Juan"
 ### **2.2 Funciones de flecha (Arrow Functions):**
 
 Una forma más concisa de escribir funciones.
+```
+const saludar = (nombre) => "Hola " + nombre; console.log(saludar("Ana"));
+```
 
-`const saludar = (nombre) => "Hola " + nombre; console.log(saludar("Ana"));  // Imprime "Hola Ana"`
 
 ---
 
@@ -96,17 +98,27 @@ Una forma más concisa de escribir funciones.
 ### **3.1 Objetos:**
 
 Un objeto en JavaScript es una colección de propiedades, cada una con un valor.
-
-``let persona = {   nombre: "Carlos",   edad: 28,   saludar: function() {     return `Hola, soy ${this.nombre}`;   } };  console.log(persona.saludar());  // Imprime "Hola, soy Carlos"``
+```
+let persona = {   
+	nombre: "Carlos",   
+	edad: 28,   
+	saludar: function() {     
+		return `Hola, soy ${this.nombre}`;   
+	} 
+};  
+console.log(persona.saludar());  // Imprime "Hola, soy Carlos"
+```
 
 ### **3.2 Arrays:**
 
 Un array es una lista ordenada de elementos.
-`let numeros = [1, 2, 3, 4]; console.log(numeros[0]);  // Imprime 1`
-
+```
+let numeros = [1, 2, 3, 4]; console.log(numeros[0]);  // Imprime 1
+```
 Puedes acceder y manipular arrays con métodos como `push()`, `pop()`, `shift()`, `unshift()`, `map()`, `filter()`, etc.
-
-`numeros.push(5);  // Agrega el número 5 al final console.log(numeros);  // [1, 2, 3, 4, 5]`
+```
+numeros.push(5);  // Agrega el número 5 al final console.log(numeros);
+```
 
 ---
 
@@ -117,84 +129,86 @@ El **DOM** es una interfaz de programación que permite acceder a los elementos 
 ### **4.1 Acceder a elementos:**
 
 - **`getElementById()`**: Obtiene un elemento por su ID.
-`let encabezado = document.getElementById("miEncabezado");`
-
+```
+let encabezado = document.getElementById("miEncabezado");
+```
 - **`getElementsByClassName()`**: Obtiene una colección de elementos por su clase.
-
-
-`let elementos = document.getElementsByClassName("miClase");`
-
+```
+let elementos = document.getElementsByClassName("miClase");
+```
 - **`querySelector()`**: Selecciona el primer elemento que coincide con un selector CSS.
-
-`let boton = document.querySelector("#miBoton");`
-
+```
+let boton = document.querySelector("#miBoton");
+```
 ### **4.2 Modificar elementos:**
 
 - **Cambiar el contenido de un elemento:**
-
-`document.getElementById("miEncabezado").textContent = "Nuevo texto";`
-
+```
+document.getElementById("miEncabezado").textContent = "Nuevo texto";
+```
 - **Cambiar el estilo de un elemento:**
-
-`document.getElementById("miEncabezado").style.color = "blue";`
-
+```
+document.getElementById("miEncabezado").style.color = "blue";
+```
 - **Añadir un evento:**
-
-`document.getElementById("miBoton").addEventListener("click", function() {   alert("Botón presionado"); });`
-
+```
+document.getElementById("miBoton").addEventListener("click", function() {   alert("Botón presionado"); });
+```
 ### **4.3 Crear y agregar nuevos elementos:**
-
-`let nuevoElemento = document.createElement("div"); nuevoElemento.textContent = "¡Hola, mundo!"; document.body.appendChild(nuevoElemento);`
-
+```
+let nuevoElemento = document.createElement("div"); 
+nuevoElemento.textContent = "¡Hola, mundo!"; document.body.appendChild(nuevoElemento);
+```
 ---
-
 ## **5. Promesas (Promises)**
 
 Las **Promesas** en JavaScript son objetos que representan la eventual finalización o el fracaso de una operación asíncrona. Son fundamentales para trabajar con código asincrónico como las peticiones HTTP.
 
 ### **5.1 Promesa básica:**
+```
+let miPromesa = new Promise((resolve, reject) => {   
+	let exito = true;  // Cambia a false para simular un error
+	if (exito) {  
+		resolve("Operación exitosa");   
+	}else {     
+		reject("Hubo un error");   
+	}
+});  
+miPromesa   
+	.then(result => console.log(result))   // "Operación exitosa"   
+	.catch(error => console.log(error));  // "Hubo un error"
 
-`let miPromesa = new Promise((resolve, reject) => {`   
-`let exito = true;  // Cambia a false para simular un error`    
-
-`if (exito) {`  
-	`resolve("Operación exitosa");`   
-`}else {`     
-	`reject("Hubo un error");`   
-`}` 
-`});`  
-`miPromesa`   
-	`.then(result => console.log(result))   // "Operación exitosa"`   
-	`.catch(error => console.log(error));  // "Hubo un error"`
+```
 
 ### **5.2 Encadenamiento de promesas:**
 
 Puedes encadenar múltiples `then` y `catch` para manejar diferentes etapas de la promesa.
-
-`let promesa = new Promise((resolve, reject) => {`   
-`resolve("Operación completada");` 
-`});`  
-`promesa`   
-`.then(result => {`     
-`console.log(result);  // "Operación completada"`     
-`return "Siguiente paso";`   
-`})`   
-`.then(result => {`     
-`console.log(result);  // "Siguiente paso"`   
-`})`   
-`.catch(error => {`     
-`console.log(error);`   
-`});`
-
+```
+let promesa = new Promise((resolve, reject) => {   
+	resolve("Operación completada"); 
+});  
+promesa   
+	.then(result => {     
+		console.log(result);  // "Operación completada"     
+		return "Siguiente paso";   
+	})   
+.then(result => {     
+	console.log(result);  // "Siguiente paso"   
+})   
+.catch(error => {     
+	console.log(error);   
+});
+```
 ### **5.3 `async` y `await`:**
 
 `async` y `await` son una forma más sencilla de trabajar con promesas, haciendo que el código asincrónico parezca más sincrónico.
-
-`async function ejemploAsync() {`   
-`let resultado = await miPromesa;`   
-`console.log(resultado);  // "Operación exitosa" }`  
-`ejemploAsync();`
-
+```
+async function ejemploAsync() {   
+	let resultado = await miPromesa;   
+	console.log(resultado);  // "Operación exitosa" 
+}  
+ejemploAsync();
+```
 ---
 
 ## **6. Event Loop y Asincronía**
@@ -204,17 +218,17 @@ El **Event Loop** es el mecanismo que permite que JavaScript ejecute código de 
 ### **6.1 setTimeout y setInterval:**
 
 - **`setTimeout()`**: Ejecuta una función después de un cierto tiempo.
-
-`setTimeout(() => {`   
-`console.log("Esto se muestra después de 2 segundos");` 
-`}, 2000);`
-
+```
+setTimeout(() => {   
+	console.log("Esto se muestra después de 2 segundos"); 
+}, 2000);
+```
 - **`setInterval()`**: Ejecuta una función repetidamente a intervalos de tiempo definidos.
-
-`setInterval(() => {`   
-`console.log("Esto se repite cada 1 segundo");` 
-`}, 1000);`
-
+```
+setInterval(() => {   
+	console.log("Esto se repite cada 1 segundo"); 
+}, 1000);
+```
 ---
 
 ## **7. ES6 y Funciones Avanzadas**
@@ -224,29 +238,37 @@ El **Event Loop** es el mecanismo que permite que JavaScript ejecute código de 
 Te permite extraer valores de arrays u objetos de manera más fácil.
 
 - **Objetos:**
-
-`const persona = { nombre: "Juan", edad: 25 };` 
-`const { nombre, edad } = persona;` 
-`console.log(nombre);  // "Juan"`
-
+```
+const persona = { nombre: "Juan", edad: 25 }; 
+const { nombre, edad } = persona; 
+console.log(nombre);  // "Juan"
+```
 - **Arrays:**
-
-`const numeros = [1, 2, 3];` 
-`const [a, b] = numeros;` 
-`console.log(a);  // 1`
-
+```
+const numeros = [1, 2, 3]; 
+const [a, b] = numeros; 
+console.log(a);  // 1
+```
 ### **7.2 Operador Rest y Spread:**
 
 - **Rest (`...`)**: Para agrupar elementos.
-
-`function sumar(...numeros) {   return numeros.reduce((acc, num) => acc + num, 0); } console.log(sumar(1, 2, 3));  // 6`
-
+```
+function sumar(...numeros) {   
+	return numeros.reduce((acc, num) => acc + num, 0); 
+} 
+console.log(sumar(1, 2, 3));  // 6
+```
 - **Spread (`...`)**: Para expandir elementos de un array u objeto.
-
-`const arr1 = [1, 2]; const arr2 = [...arr1, 3, 4]; console.log(arr2);  // [1, 2, 3, 4]`
-
+```
+const arr1 = [1, 2]; 
+const arr2 = [...arr1, 3, 4]; 
+console.log(arr2);  // [1, 2, 3, 4]
+```
 ### **7.3 Template Literals:**
 
 Permite interpolar expresiones dentro de cadenas de texto de manera más fácil.
-
-``let nombre = "Pedro"; let saludo = `Hola, ${nombre}`; console.log(saludo);  // "Hola, Pedro"``
+```
+let nombre = "Pedro"; 
+let saludo = `Hola, ${nombre}`; 
+console.log(saludo);  // "Hola, Pedro"
+```
