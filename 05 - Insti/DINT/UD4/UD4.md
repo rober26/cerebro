@@ -3,7 +3,7 @@ Conceptos básicos
 DOM
 Promesas
 
-[[React]]
+[[01 -Tecnologias/Frontend/Lenguajes y Frameworks/React/React]]
 Instalación y configuración 
 Router
 WebStorage

@@ -2,5 +2,5 @@
   "format": "D-M-Y",
   "folder": "10 - Diary",
   "template": "00 - Templates/Template Diario",
-  "autorun": true
+  "autorun": false
 }

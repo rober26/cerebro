@@ -272,3 +272,30 @@ let nombre = "Pedro";
 let saludo = `Hola, ${nombre}`; 
 console.log(saludo);  // "Hola, Pedro"
 ```
+### 8. Prompts en JavaScript
+
+El `prompt()` es una función incorporada de JavaScript que se utiliza para **pedirle al usuario que introduzca un dato** a través de una ventana emergente en el navegador.
+
+#### Sintaxis:
+```
+let variable = prompt("Mensaje que se le muestra al usuario");
+````
+
+¿Qué hace?
+- Muestra una ventana emergente con un mensaje y un campo de texto.
+- El usuario escribe algo y pulsa "Aceptar" o "Cancelar".
+- Lo que escribe se guarda en la variable.
+- El valor retornado siempre es de tipo string (aunque el usuario escriba un número).
+Ejemplo:
+```
+let nombre = prompt("¿Cómo te llamas?");
+alert("Hola, " + nombre);
+```
+Cancelar:
+Si el usuario pulsa "Cancelar", prompt() devuelve null.
+🔁 Conversión de tipo:
+Si quieres trabajar con números, debes convertir el valor:
+```
+let edad = prompt("¿Cuántos años tienes?");
+edad = Number(edad); // convierte de string a número
+```
