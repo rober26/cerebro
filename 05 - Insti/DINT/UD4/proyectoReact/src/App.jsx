@@ -13,6 +13,8 @@ function App() {
   const [texto, setTexto] = useState("");
   const [colorFondo,setColorFondo] = useState("white");
   const [fechaHora, setFechaHora] = useState(new Date().toLocaleString());
+  const [logeado,setlogeado] = useState(false);
+  
   const cambiarColorFondo= () => {
     setColorFondo(colorFondo ==="white" ? "black" : "white")
   }
@@ -33,9 +35,9 @@ function App() {
     <>
       <Mensaje />
       <Perfil />
-      <button id='botosSaludo' onClick={saludar}>Mostrar saludo</button>
+      <button id="botosSaludo" onClick={saludar}>Mostrar saludo</button>
       <p>
-        <input type='text' id='input' value={texto} onChange={actualizar}></input>
+        <input type="text" id="input" value={texto} onChange={actualizar}></input>
       </p>
       <p>{texto}</p>
       <ul>
@@ -48,10 +50,13 @@ function App() {
       <button onClick={() => (setNumero(numero + 1) )}>+1</button>
       <button onClick={() => (setNumero(numero - 1) )}>-1</button>
       <button onClick={() => (setNumero(0))}>Reset</button>
-    
+      
       <div style={{ backgroundColor: colorFondo }}>
         <button onClick={cambiarColorFondo}>Cambiar Color de Fondo</button>
       </div>
+  
+      {logeado ? (<h1>Bienvenido</h1>):(<h1>Inicia sesion</h1>)}
+      <button onClick={()=>setlogeado(!logeado)}>{logeado ? "Cerrar sesion": "iniciar sesion"}</button>
 
       <p>Fecha y hora actual:{fechaHora}</p>
       <button onClick={actualizarFecha}>Actualizar</button>
