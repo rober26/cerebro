@@ -15,14 +15,39 @@ A continuación, se detalla cómo implementar estas operaciones utilizando JDBC 
 
 Antes de realizar cualquier operación CRUD, es necesario establecer una conexión con la base de datos:
 
+```
+import java.sql.*;  
+public class ConexionDB {     
+	public static Connection conectar() throws SQLException {         
+		String url = "jdbc:mysql://localhost:3306/mi_base_de_datos";
+		String usuario = "usuario";         
+		String contrasena = "contrasena";         
+		return DriverManager.getConnection(url, usuario, contrasena);     
+	} 
+}
+```
 
-`import java.sql.*;  public class ConexionDB {     public static Connection conectar() throws SQLException {         String url = "jdbc:mysql://localhost:3306/mi_base_de_datos";         String usuario = "usuario";         String contrasena = "contrasena";         return DriverManager.getConnection(url, usuario, contrasena);     } }`
+
 
 ### **2. Crear (Create)**
 
 Para **insertar** datos en la base de datos, se utiliza el comando SQL `INSERT`. Usamos `PreparedStatement` para evitar vulnerabilidades como la **inyección SQL**.
 
-`public class CRUD {     public void crear(String nombre, int edad) {         String sql = "INSERT INTO alumnos (nombre, edad) VALUES (?, ?)";          try (Connection conn = ConexionDB.conectar();              PreparedStatement pstmt = conn.prepareStatement(sql)) {                          pstmt.setString(1, nombre);             pstmt.setInt(2, edad);             pstmt.executeUpdate();             System.out.println("Alumno creado con éxito.");                      } catch (SQLException e) {             e.printStackTrace();         }     } }`
+```
+public class CRUD {     
+	public void crear(String nombre, int edad) {         
+	String sql = "INSERT INTO alumnos (nombre, edad) VALUES (?, ?)";          try (Connection conn = ConexionDB.conectar();a
+		PreparedStatement pstmt = conn.prepareStatement(sql)) {                   pstmt.setString(1, nombre);             
+		pstmt.setInt(2, edad);             
+		pstmt.executeUpdate();             
+		System.out.println("Alumno creado con éxito.");
+	} catch (SQLException e) {             
+		e.printStackTrace();         
+	}     
+		} 
+	}
+```
+
 
 ### **3. Leer (Read)**
 
