@@ -16,12 +16,19 @@ function App() {
   const [logeado,setlogeado] = useState(false);
   
   const cambiarColorFondo= () => {
-    setColorFondo(colorFondo ==="white" ? "black" : "white")
+    setColorFondo(colorFondo === "white" ? "black" : "white")
   }
-  
+  const functmostrarInfo = ()=> {
+    setMostrarInfo(!mostrarInfo)
+    setDisplay(mostrarInfo === true ? "block"  : "none")
+  }
   
   const saludar = () =>{
     alert("!Hola desde React¡")
+     
+  setNombrePrompt(prompt("¿Cuál es tu nombre?"));
+  setEdadPrompt(prompt("¿Cuál es tu Edad?"));
+  
   } 
   const actualizar = ()=>{
     setTexto(document.getElementById("input").value);
@@ -29,12 +36,21 @@ function App() {
   const actualizarFecha = () =>{
     setFechaHora(new Date().toLocaleString())
   }
+  const [nombre, setNombre] = useState("");
+  const [edad, setEdad] = useState("");
+
   
+  const [nombrePrompt,setNombrePrompt] = useState("")
+  const [edadPrompt,setEdadPrompt] = useState("")
+      
+  const [mostrarInfo,setMostrarInfo] = useState("");
+  const [display,setDisplay] = useState("");
 
   return (
     <>
       <Mensaje />
-      <Perfil />
+
+      <Perfil nombre={nombrePrompt} edad={edadPrompt}/>
       <button id="botosSaludo" onClick={saludar}>Mostrar saludo</button>
       <p>
         <input type="text" id="input" value={texto} onChange={actualizar}></input>
@@ -60,6 +76,10 @@ function App() {
 
       <p>Fecha y hora actual:{fechaHora}</p>
       <button onClick={actualizarFecha}>Actualizar</button>
+      <div>
+        <button onClick={functmostrarInfo}>{mostrarInfo ? "Mostrar Info" : "Ocultar info"}</button>
+        <p style={{display: display}}>Informacion secreta...</p>
+      </div>
     </>
   )
 }
