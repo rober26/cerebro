@@ -33,5 +33,3 @@ Dependecias:
 - Balm(Waystones)
 - Curios API(Botania)
 - Patchouli(Botania)
-- citadel(alex-mod)
-- Amendments(Supplementaries)

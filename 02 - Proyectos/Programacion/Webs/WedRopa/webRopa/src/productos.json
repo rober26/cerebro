@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "nombre": "Jersey amarillo",
+        "precio": 60,
+        "descuento": 20,
+        "descripcion": "Jersey de punto suave con cuello redondo y ajuste relajado.",
+        "categoria": "jersey",
+        "tallas": ["S", "M", "L"],
+        "colores": ["amarillo"],
+        "stock": {
+            "S": { "amarillo": 4 },
+            "M": { "amarillo": 5 },
+            "L": { "amarillo": 3 }
+        },
+        "img": "src/assets/img1.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Pantalón gris mujer",
+        "precio": 20,
+        "descuento": 0,
+        "descripcion": "Pantalón casual de mujer en tono gris con corte recto.",
+        "categoria": "pantalón",
+        "tallas": ["XS", "S", "M", "L", "XL"],
+        "colores": ["gris"],
+        "stock": {
+            "XS": { "gris": 2 },
+            "S": { "gris": 2 },
+            "M": { "gris": 3 },
+            "L": { "gris": 1 },
+            "XL": { "gris": 0 }
+        },
+        "img": "src/assets/img2.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Falda marrón",
+        "precio": 25,
+        "descuento": 0,
+        "descripcion": "Falda de corte midi en tela suave y color marrón clásico.",
+        "categoria": "falda",
+        "tallas": ["S", "M", "L"],
+        "colores": ["marrón"],
+        "stock": {
+            "S": { "marrón": 1 },
+            "M": { "marrón": 2 },
+            "L": { "marrón": 2 }
+        },
+        "img": "src/assets/img3.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Chaqueta beige",
+        "precio": 45,
+        "descuento": 18,
+        "descripcion": "Chaqueta ligera de entretiempo con bolsillos y cierre frontal.",
+        "categoria": "chaqueta",
+        "tallas": ["M", "L", "XL"],
+        "colores": ["beige", "negro"],
+        "stock": {
+            "M": { "beige": 3, "negro": 2 },
+            "L": { "beige": 4 },
+            "XL": { "negro": 1 }
+        },
+        "img": "src/assets/img4.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Bolso rojo",
+        "precio": 30,
+        "descuento": 0,
+        "descripcion": "Bolso pequeño de cuero sintético con correa ajustable.",
+        "categoria": "accesorio",
+        "tallas": [],
+        "colores": ["rojo"],
+        "stock": {
+            "único": { "rojo": 20 }
+        },
+        "img": "src/assets/img5.jpg"
+    }
+]

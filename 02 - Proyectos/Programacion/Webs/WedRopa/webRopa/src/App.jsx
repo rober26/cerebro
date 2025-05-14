@@ -9,19 +9,17 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom'
 function App() {
 
   return (
-    <>
       <BrowserRouter>
-      <Header/>
-      
-      <Routes>
-        <Route path='/' element={<Productos/>}/>
-        <Route path='Producto' element={<Producto/>}/>
-        <Route path='Contacto' element={<Contacto/>}/>
-      </Routes>
+        <Header/>
+        
+        <Routes>
+          <Route path='/' element={<Productos/>}/>
+          <Route path='Producto' element={<Producto/>}/>
+          <Route path='Contacto' element={<Contacto/>}/>
+        </Routes>
 
-      <Footer/>
+        <Footer/>
       </BrowserRouter>
-    </>
   )
 }
 

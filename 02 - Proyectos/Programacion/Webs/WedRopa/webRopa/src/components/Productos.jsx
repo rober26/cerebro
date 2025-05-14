@@ -1,6 +1,12 @@
+import { useEffect, useState } from "react";
 import Producto from "./Producto";
-
+import productos from '../productos.json';
 function Productos(){
+
+
+    
+
+
     return(
         <main >
         <img src="src/assets/Banner.svg" alt="Banner promocional" className="main__banner"></img>
@@ -17,9 +23,9 @@ function Productos(){
 
             <section className="products">
                 <div className="products__grid">
-                    
-                    <Producto/>
-
+                    {productos.map(producto =>(
+                        <Producto key ={producto.id} nombre={producto.nombre} img={producto.img} precio={producto.precio} />
+                    ))}
                 </div>
             </section>
         </div>
