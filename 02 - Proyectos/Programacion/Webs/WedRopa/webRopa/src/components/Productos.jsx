@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Producto from "./Producto";
+import Producto from "./ProductoBox";
 import productos from '../productos.json';
 function Productos(){
 

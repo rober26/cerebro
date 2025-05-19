@@ -25,10 +25,6 @@ function Saludo() {
 
 **Ejemplo de JSX:**
 
-jsx
-
-Copiar código
-
 `const elemento = <h1>Hola, soy JSX</h1>;`
 
 ---

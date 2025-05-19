@@ -16,14 +16,13 @@ Componentes:
 Ya existentes
 	Footer
 	Header
-	Producto 
+	ProductoBox
 	Productos
 
 Obligatorios
 	Sobre mi 
 	Contacto
 Añadidos
+	Producto
 	Carrito
 	Login 
-	Joyas 
-	
