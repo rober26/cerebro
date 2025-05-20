@@ -114,7 +114,8 @@ const Modal = ({ isOpen, onClose, children }) => {
 	return (     
 		<div className="modal-overlay" onClick={handleOutsideClick}>       
 				<div className="modal-container">         
-				<button onClick={onClose} className="modal-close">✕</button>       
+				<button onClick={onClose} className="modal-
+					close">✕</button>       
 			<div className="modal-content">{children}</div>       
 			</div>     
 		</div>   

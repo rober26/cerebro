@@ -6,6 +6,7 @@ function Footer (){
         <footer>
             <p className="footer__text">&copy; 2025 WedRopa - Todos los derechos reservados.</p>
             <Link to="Contacto">Contacto</Link>
+            <Link to="SobreNosotros">Sobre nosotros</Link>
         </footer>
     )
 }

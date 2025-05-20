@@ -1,0 +1,17 @@
+.contac__box{
+    margin: 1dvh 1dvw;
+    padding: 10dvh;
+    height: 82dvh;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    gap: 20px;
+}
+input{
+    width: 100%;
+    height: 10%;
+}
+textarea {
+    width: 100%;
+    height: 50%;
+}

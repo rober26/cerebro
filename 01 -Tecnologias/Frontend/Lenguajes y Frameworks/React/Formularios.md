@@ -19,7 +19,6 @@ const [nombre, setNombre] = useState("");
 	value={nombre}   
 	onChange={(e) => setNombre(e.target.value)} 
 />
-
 ```
 #### No Controlado (Uncontrolled Component)
 

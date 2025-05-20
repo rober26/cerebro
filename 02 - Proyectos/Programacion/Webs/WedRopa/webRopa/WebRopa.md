@@ -18,10 +18,12 @@ Ya existentes
 	Header
 	ProductoBox
 	Productos
+	Contacto
+	Sobre mi 
 
 Obligatorios
-	Sobre mi 
-	Contacto
+
+
 Añadidos
 	Producto
 	Carrito

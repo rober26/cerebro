@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/header.css"
 
 function Header() {
@@ -12,7 +13,7 @@ function Header() {
             </div>
 
             <div className="header__title-container">
-                <h1 className="header__title">WedRopa</h1>
+                <Link className="header__title" to={"/"} >WedRopa</Link>
             </div>
 
             <div className="header__icons">

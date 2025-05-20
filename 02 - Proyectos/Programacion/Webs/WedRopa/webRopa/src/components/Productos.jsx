@@ -1,11 +1,7 @@
-import { useEffect, useState } from "react";
-import Producto from "./ProductoBox";
+import ProductoBox from "./ProductoBox";
 import productos from '../productos.json';
+import "../styles/productos.css"
 function Productos(){
-
-
-    
-
 
     return(
         <main >
@@ -24,7 +20,7 @@ function Productos(){
             <section className="products">
                 <div className="products__grid">
                     {productos.map(producto =>(
-                        <Producto key ={producto.id} nombre={producto.nombre} img={producto.img} precio={producto.precio} />
+                        <ProductoBox key ={producto.id} producto ={producto} />
                     ))}
                 </div>
             </section>
