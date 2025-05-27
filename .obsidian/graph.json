@@ -1,6 +1,6 @@
 {
   "collapse-filter": true,
-  "search": "-path:\"10 - Diary\"  ",
+  "search": "-path:\"10 - Diary\"  -path:\"node_modules\"  ",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -53,6 +53,6 @@
   "repelStrength": 15.9375,
   "linkStrength": 0.99,
   "linkDistance": 250,
-  "scale": 0.07669293517575256,
+  "scale": 0.3508306925556202,
   "close": true
 }

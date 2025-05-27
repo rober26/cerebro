@@ -1,105 +1,88 @@
-## 1. Descripción General
+## 💻 Descripción General
 
-Este proyecto consiste en el diseño y construcción de un dispositivo portátil, modular y multifunción, basado en el microcontrolador ESP32. Combina funcionalidades de smartwatch, comunicador, consola interactiva, radio y walkie-talkie, integrando pantalla circular, interfaz LED, entradas de sonido y control físico mediante encoder rotativo y joystick.
+Un mini ordenador de muñeca estilo Pip-Boy, diseñado para ser compacto, modular y multifuncional. Basado en el microcontrolador **ESP32-S3**, este dispositivo es capaz de ejecutar apps como GPS, mensajería LoRa, grabadora de voz, sensores ambientales y más. Además, cuenta con conectividad WiFi y Bluetooth para integrarse con servidores y otros dispositivos.
 
-## 2. Características Principales
+---
 
-- Microcontrolador ESP32 con WiFi y Bluetooth
-	- Pantalla circular TFT (1.28", SPI)
-	- Tira LED RGB direccionable (WS2812B)
-	- Rotary encoder + Joystick PS2 (control analógico 5D)
-- Micrófono digital I2S y altavoz con amplificador
-- Módulos GPS (NEO-6M), LoRa (SX1278) y receptor de radio FM
-- Almacenamiento externo mediante tarjeta microSD
-- Alimentación por batería LiPo + circuito de carga y booster
-	- Carcasa modular impresa en 3D o cortada en láser
+## ✨ Características Clave
 
-## 3. Componentes Principales
+- Microcontrolador ESP32-S3 (dual-core, WiFi, BLE, USB nativo)
+- Pantalla TFT cuadrada (SPI)
+- Control por rotary encoder o joystick
+- Sistema de apps con menú navegable
+- Conectividad: LoRa, WiFi, Bluetooth, UART, I2C, SPI
+- Almacenamiento con microSD
+- Audio: micrófono digital + altavoz I2S
+- Módulos conectables: sensores, GPS, radio FM
+- Carcasa impresa en 3D, estilo retro-futurista
 
-### Microcontrolador
+---
 
-- ESP32 DevKit (ESP32-WROOM-32 o ESP32-S3)
+## 🏃‍♂️ Estructura de Software: Sistema de Apps
 
-### Pantallas e interfaz visual
+Cada app es una función independiente en el código, activada por un menú principal:
 
-- Pantalla circular GC9A01 (1.28") 240x240 px, SPI
-- Tira LED WS2812B (8-16 LEDs)
-- Condensador 1000 µF, Resistencia 330 Ohm
+cpp
 
-### Entrada de Usuario
+CopiarEditar
 
-- Rotary encoder KY-040 (con pulsador)
-- Joystick tipo PS2
+`enum AppID { APP_MENU, APP_GPS, APP_LORA, APP_AUDIO, APP_SENSOR }; AppID currentApp = APP_MENU;  void loop() {   switch (currentApp) {     case APP_MENU:   showMenu(); break;     case APP_GPS:    runGPS(); break;     case APP_LORA:   runLoRa(); break;     case APP_AUDIO:  runAudio(); break;     case APP_SENSOR: runSensors(); break;   }   handleInput(); }`
 
-### Audio
+---
 
-- Micrófono I2S INMP441 o SPH0645
+## 🌍 Módulos y Funciones Planeadas
+
+|Módulo / App|Funciones|
+|---|---|
+|GPS (UART)|Ubicación, seguimiento, datos de satélites|
+|LoRa (SPI)|Comunicación sin Internet, mensajería local|
+|Audio (I2S)|Grabación y reproducción de notas de voz|
+|Sensor ambiental|Temperatura, presión, humedad (BME280, I2C)|
+|Almacenamiento (SD)|Guarda logs, grabaciones, configuraciones|
+|Conexión WiFi|Sincronización con servidor personal, actualización de datos|
+|Radio FM (I2C)|Receptor de radio con salida por altavoz|
+
+---
+
+## 📊 Conexiones de Hardware (ESP32-S3)
+
+|Componente|Conexión|Pines sugeridos ESP32-S3|
+|---|---|---|
+|Pantalla TFT (SPI)|SPI|SCLK=18, MOSI=23, CS=5, DC=2, RST=4|
+|Rotary Encoder|Digital|CLK=32, DT=33, SW=25|
+|Joystick PS2|Analog/Dig|X=34, Y=35, SW=26|
+|Micrófono I2S|I2S|WS=14, SD=27, SCK=12|
+|Altavoz I2S|I2S|LRC=25, BCLK=26, DIN=22|
+|GPS (UART)|UART|RX=16, TX=17|
+|LoRa SX1278|SPI|MISO=19, MOSI=23, SCK=18, CS=5, DIO0=4|
+|Radio FM (I2C)|I2C|SDA=13, SCL=15|
+|Lector microSD|SPI|MISO=19, MOSI=23, SCK=18, CS=2|
+
+---
+
+## 💡 Ideas Adicionales para Apps Futuras
+
+- Control remoto por Bluetooth para PC o smartphone
     
-- Amplificador I2S MAX98357A
+- Juegos simples (Snake, Pong, etc.)
     
-- Altavoz 8 Ohm / 1W
+- App de estado del sistema: batería, red, almacenamiento
+    
+- Modo terminal retro (estilo consola DOS)
+    
+- Enlace con sensores externos vía I2C (por puerto de expansión)
     
 
-### Comunicaciones
+---
 
-- GPS NEO-6M o NEO-M8N (UART)
-- Módulo LoRa SX1278 (SPI)
-- Receptor de radio FM (como TEA5767 o RDA5807M, I2C)
+## 🛠️ Siguientes pasos
 
-### Almacenamiento
-
-- Módulo lector de tarjeta microSD (SPI)
-- Tarjeta microSD de 4GB o superior
-
-### Alimentación
-
-- Batería LiPo 3.7V 2500-5000 mAh
-- Cargador TP4056 con protección
-- Elevador de voltaje MT3608 (5V)
-- Interruptor SPST
-
-### Conectividad y montaje
-
-- Protoboard o placa perforada
-- Cables Dupont
-- Carcasa 3D / láser + tornillería M2-M3
-
-## 4. Diagrama de Conexión (Resumen)
-
-- LED y pantalla: alimentación 5V desde booster, datos al ESP32
-- Pantalla TFT: SPI (SCLK, MOSI, CS, DC, RST)
-- Rotary encoder: 2 pines digitales + pulsador
-- Joystick: 2 pines analógicos + digital
-- Micrófono: I2S WS, SD, SCK
-- Altavoz: datos I2S al MAX98357A
-- GPS: UART TX/RX
-- LoRa: SPI (compartido con pantalla si se multiplexa)
-- Radio FM: I2C (SDA, SCL) + salida de audio al amplificador
-- microSD: SPI (SCLK, MOSI, MISO, CS)
-
-## 5. Software y Librerías
-
-- Arduino IDE o PlatformIO
-- FastLED o Adafruit_NeoPixel
-- TFT_eSPI para pantalla GC9A01
-- LoRa (RadioHead o arduino-LoRa)
-- I2S para micrófono y salida de audio
-- TEA5767 o RDA5807M para radio FM (librerías específicas)
-- SD o SdFat para lectura/escritura en tarjeta microSD
-
-## 6. Posibles Aplicaciones
-
-- Comunicación LoRa sin internet (mensajes, datos GPS)
-- Receptor de radio FM portátil
-- Grabación y reproducción de audio
-- Almacenamiento de datos de sensores o GPS
-- Visualizador de estados y sensores
-- Mini consola interactiva
-- Controlador remoto modular
-
-## 7. Futuras Mejoras
-
-- Carcasa hermética y ergonómica
-- Baterías intercambiables o carga inalámbrica
-- Conectividad celular o LTE
-- Reconocimiento de voz local o remoto
+1. Diseñar carcasa compacta y modular (3D o láser)
+    
+2. Implementar software base (menú, sistema de apps)
+    
+3. Integrar almacenamiento y configuración por microSD
+    
+4. Probar conectividad WiFi/LoRa con servidor personal
+    
+5. Optimizar consumo para uso prolongado con batería
