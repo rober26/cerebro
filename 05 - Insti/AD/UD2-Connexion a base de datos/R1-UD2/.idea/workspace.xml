@@ -4,60 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="820fa596-1b40-44b4-ac8d-2f6337722cab" name="Changes" comment="" />
+    <list default="true" id="2183aeb0-5647-40b2-9727-bf55a791a65b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
+  &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2vBv3ma2sDQ8ZUhEbUopDNU9HkR" />
+  <component name="ProjectId" id="2xbIhnAS7TTThE2xEVmpZe9sKXz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Ej1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/rober/Nextcloud/cerebro/05 - Insti/AD/UD2-Connexion a base de datos/R1-UD2"
+    "last_opened_file_path": "C:/Users/rober/Nextcloud/cerebro/05 - Insti/PSP/RA1/Ej"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="820fa596-1b40-44b4-ac8d-2f6337722cab" name="Changes" comment="" />
-      <created>1743631085834</created>
+      <changelist id="2183aeb0-5647-40b2-9727-bf55a791a65b" name="Changes" comment="" />
+      <created>1748200467409</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1743631085834</updated>
+      <updated>1748200467409</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Ej1.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/City.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
