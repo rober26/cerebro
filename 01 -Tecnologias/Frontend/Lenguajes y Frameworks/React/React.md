@@ -1,4 +1,4 @@
-React es una biblioteca de [[JavaScript]] para construir interfaces de usuario interactivas y dinámicas. Fue desarrollada por Facebook y se basa en un modelo de componentes reutilizables, lo que facilita la creación de aplicaciones web eficientes y escalables.
+React es una biblioteca de [[05 - Insti/DINT/React/UD4/Apuntes/JavaScript]] para construir interfaces de usuario interactivas y dinámicas. Fue desarrollada por Facebook y se basa en un modelo de componentes reutilizables, lo que facilita la creación de aplicaciones web eficientes y escalables.
 ## Conceptos principales
 
 ### 1. Componentes
