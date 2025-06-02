@@ -1,19 +1,37 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../styles/contacto.css"
 import Swal from 'sweetalert2';  
 import axios from "axios";
+import operaciones from "../servicios /axios/operaciones";
 
 function Contacto(){
     const [nombre, setNombre] = useState("");
     const [correo, setCorreo] = useState("");
     const [mensaje, setMensaje] = useState("");
     const [errores, setErrores] = useState([]);
+    const [mensajes, setMensajes] = useState([]);
 
     const enviarServer = () =>{
-        axios.post("http://localhost:3000/mensajes",{
-            Nombre : nombre,
-            Correo: correo,
-            Mensaje : mensaje
+        operaciones.setProducto(nombre,correo,mensaje);
+    }
+
+    useEffect(() => {
+        operaciones.getMensajes()
+        .then(response => {
+            setMensajes(response.data)
+        })
+        .catch(error =>{
+            console.log(error);
+        })
+    }, []);
+
+    const eliminar = (id) => {
+        operaciones.deleteMensaje(id)
+        .then(response => {
+            alert("Mensaje con id "+ id+ "ha sido eliminado")
+        })
+        .catch(error =>{
+            console.error(error)
         })
     }
 
@@ -63,6 +81,15 @@ function Contacto(){
 
                 <button type="submit">Enviar</button>
             </form>
+            <article>
+                {mensajes.map(mensaje =>(
+                    <div>
+                        <p key ={mensaje.id}>NOMBRE: {mensaje.Nombre},CORREO: {mensaje.Correo}, MENSAJE:{mensaje.Mensaje} </p>
+                        <button onClick={()=>{eliminar(mensaje.id)}} >Eliminar</button>
+                    </div>
+    
+                ))}
+            </article>
         </main>
     )
 }

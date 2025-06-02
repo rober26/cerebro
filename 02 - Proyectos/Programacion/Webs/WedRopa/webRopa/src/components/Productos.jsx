@@ -1,13 +1,13 @@
 import ProductoBox from "./ProductoBox";
 import "../styles/productos.css"
 import { useEffect, useState } from "react";
-import axios from "axios";
+import operaciones from "../servicios /axios/operaciones";
 
 function Productos(){
     const [productos,setProductos] = useState([])
 
     useEffect(() => {
-        axios.get("http://localhost:3000/productos")
+        operaciones.getProductos()
         .then(response => {
             setProductos(response.data)
         })

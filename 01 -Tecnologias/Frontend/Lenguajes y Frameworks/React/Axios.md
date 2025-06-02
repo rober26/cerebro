@@ -16,37 +16,83 @@ Axios es una biblioteca para hacer **peticiones HTTP** desde el navegador o Node
 
 ---
 
-## 📌 Uso básico
+## 📌 Uso básico con `axios`
 
-### GET
-
-```
-useEffect(() => {   
-	axios.get('https://api.example.com/data')     
-	.then(response => {       
-		console.log(response.data);     
-	})     
-	.catch(error => {       
-		console.error(error);     
-	}); 
-}, []);`
-```
-
-### POST
+### ✅ GET (Obtener datos)
 
 ```
-axios.post('https://api.example.com/data', {   
-	name: 'Juan',   
-	age: 25 }) 
-	.then(response => {   
-	console.log(response.data); 
-	}) 
-	.catch(error => {   
-	console.error(error); 
-	}
-);
+useEffect(() => {      
+	axios.get('https://api.example.com/data')          
+	.then(response => {              
+		console.log(response.data);          
+	})          
+	.catch(error => {              
+		console.error(error);          
+	});  
+}, []);
 ```
 
+---
+
+### 🟢 POST (Crear datos)
+
+```
+axios.post('https://api.example.com/data', {      
+	name: 'Juan',      
+	age: 25  
+})  
+.then(response => {      
+	console.log(response.data);  
+})  
+.catch(error => {      
+	console.error(error);  
+});
+```
+
+---
+
+### 🟡 PUT (Actualizar **todo** el recurso)
+
+```
+axios.put('https://api.example.com/data/1', {      
+	name: 'Juan Actualizado',      
+	age: 26  
+})  
+.then(response => {      
+	console.log(response.data);  
+})  
+.catch(error => {      
+	console.error(error);  
+});
+```
+
+---
+
+### 🟠 PATCH (Actualizar **parte** del recurso)
+
+```
+axios.patch('https://api.example.com/data/1', {      
+	age: 27  
+})  
+.then(response => {      
+	console.log(response.data);  
+})  
+.catch(error => {      
+	console.error(error);  
+});
+```
+---
+
+### 🔴 DELETE (Eliminar recurso)
+```
+axios.delete('https://api.example.com/data/1')    
+.then(response => {        
+	console.log('Recurso eliminado:', response.data);    
+})    
+.catch(error => {        
+	console.error(error);    
+});
+```
 ---
 
 ## 📦 Axios con async/await

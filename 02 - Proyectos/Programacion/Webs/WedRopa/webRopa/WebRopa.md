@@ -7,9 +7,8 @@
 
 ### Axios
 - [x] Realizar Petición Get, para mostrar información que devuelve un servicio de json-server
-- [ ] Put | post | patch
+- [x] Put | post | patch
 - [ ] Ejemplo de delete
-
 
 
 # Componentes:
