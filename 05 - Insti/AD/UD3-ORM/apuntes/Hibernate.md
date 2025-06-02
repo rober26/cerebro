@@ -20,28 +20,52 @@ Puedes usar Hibernate:
 ## ⚙️ Configuración básica (Hibernate nativo)
 
 ### 1. Dependencias Maven
-
-xml
-
-Copiar código
-
-`<dependency>     <groupId>org.hibernate</groupId>     <artifactId>hibernate-core</artifactId>     <version>5.6.15.Final</version> <!-- o la más reciente --> </dependency> <dependency>     <groupId>org.slf4j</groupId>     <artifactId>slf4j-api</artifactId>     <version>1.7.36</version> </dependency>`
+```
+<dependency>     
+	<groupId>org.hibernate</groupId>     
+	<artifactId>hibernate-core</artifactId>     
+	<version>5.6.15.Final</version> 
+	<!-- o la más reciente --> 
+</dependency> 
+<dependency>     
+	<groupId>org.slf4j</groupId>     
+	<artifactId>slf4j-api</artifactId>     
+	<version>1.7.36</version> 
+</dependency>
+```
 
 ### 2. `hibernate.cfg.xml`
 
-xml
-
-Copiar código
-
-`<hibernate-configuration>   <session-factory>     <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/mi_base</property>     <property name="hibernate.connection.username">root</property>     <property name="hibernate.connection.password">1234</property>      <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>     <property name="hibernate.hbm2ddl.auto">update</property>     <property name="show_sql">true</property>      <mapping class="com.ejemplo.modelo.Usuario"/>   </session-factory> </hibernate-configuration>`
-
+```
+<hibernate-configuration>   
+	<session-factory>     
+		<property 
+			name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver
+		</property>     
+		
+		<property 
+			name="hibernate.connection.url">jdbc:mysql://localhost:3306/mi_base
+		</property>     
+		
+		<property name="hibernate.connection.username">root</property>  
+		   
+		<property name="hibernate.connection.password">1234</property>     
+		 
+		<property name="hibernate.dialect">
+			org.hibernate.dialect.MySQL5Dialect
+		</property>     
+		
+		<property name="hibernate.hbm2ddl.auto">update</property>     
+		
+		<property name="show_sql">true</property>  
+		    
+		<mapping class="com.ejemplo.modelo.Usuario"/>   
+	</session-factory> 
+</hibernate-configuration>
+```
 ---
 
 ## 🧱 Entidad ejemplo
-
-java
-
-Copiar código
 
 `@Entity @Table(name = "usuarios") public class Usuario {     @Id     @GeneratedValue(strategy = GenerationType.IDENTITY)     private Long id;      @Column(nullable = false)     private String nombre;      private String email;      // Getters y Setters }`
 

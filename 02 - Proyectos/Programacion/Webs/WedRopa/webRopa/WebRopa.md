@@ -6,7 +6,7 @@
 - [x] Cuando el formulario sea enviado debe aparecer un mensaje mediante SweetAlert.
 
 ### Axios
-- [ ] Realizar Petición Get, para mostrar información que devuelve un servicio de json-server
+- [x] Realizar Petición Get, para mostrar información que devuelve un servicio de json-server
 - [ ] Put | post | patch
 - [ ] Ejemplo de delete
 
