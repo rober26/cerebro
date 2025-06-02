@@ -1,7 +1,20 @@
 import ProductoBox from "./ProductoBox";
-import productos from '../productos.json';
 import "../styles/productos.css"
+import { useEffect, useState } from "react";
+import axios from "axios";
+
 function Productos(){
+    const [productos,setProductos] = useState([])
+
+    useEffect(() => {
+        axios.get("http://localhost:3000/productos")
+        .then(response => {
+            setProductos(response.data)
+        })
+        .catch(error =>{
+            console.log(error);
+        })
+    }, []);
 
     return(
         <main >

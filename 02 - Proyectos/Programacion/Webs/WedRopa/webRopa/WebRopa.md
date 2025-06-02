@@ -1,18 +1,18 @@
-Construir una pequeña aplicación con React, usando componentes reutilizables y React Router.
+### Añadir Validación al formulario de la página contacto
+- [x] Requeridos,
+- [x] longitud min/max,
+- [x] evitar caracteres especiales,etc
+- [ ] ....
+- [x] Cuando el formulario sea enviado debe aparecer un mensaje mediante SweetAlert.
 
-- **Roberto** -> Tienda de Ropa
+### Axios
+- [ ] Realizar Petición Get, para mostrar información que devuelve un servicio de json-server
+- [ ] Put | post | patch
+- [ ] Ejemplo de delete
 
- El proyecto incluirá una sección "Sobre mí, "Formulario de contacto" y un footer personalizado.
 
-Crear una opción de menú, llamada "Sobre mí". 
-	Debe referenciar un componente en react con información personal  
 
-Implementa un componente, para contener el footer de tu proyecto.  
-
-Componente "Contacto"
-	con un formulario con los campos nombre, correo y mensaje, que podrían enviar usando EmailJS o simplemente mostrar un alert.
-
-Componentes:
+# Componentes:
 Ya existentes
 	Footer
 	Header

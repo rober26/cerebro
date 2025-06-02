@@ -1,12 +1,21 @@
 import { useState } from "react";
 import "../styles/contacto.css"
 import Swal from 'sweetalert2';  
+import axios from "axios";
 
 function Contacto(){
     const [nombre, setNombre] = useState("");
     const [correo, setCorreo] = useState("");
     const [mensaje, setMensaje] = useState("");
     const [errores, setErrores] = useState([]);
+
+    const enviarServer = () =>{
+        axios.post("http://localhost:3000/mensajes",{
+            Nombre : nombre,
+            Correo: correo,
+            Mensaje : mensaje
+        })
+    }
 
     const enviar = (e)=>{
         e.preventDefault();
@@ -17,6 +26,7 @@ function Contacto(){
                 `Correo: ${correo}\n` +
                 `Mensaje: ${mensaje}`
             );
+            enviarServer();
         }else{
             Swal.fire({
                 title: 'Errores en el formulario',
