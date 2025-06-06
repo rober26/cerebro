@@ -7,27 +7,16 @@ Basándote en este tutorial [https://desarrolloweb.com/articulos/crear-api-rest
 Prueba la API REST generada bien sea con Postman, httpie, POST, curl o cualquiera de las alternativas de las referencias. El objetivo es describir el código de retorno y los datos devueltos para cada una de las siguientes peticiones:
 
 - GET de la lista de entidades.
-    
 - GET de una entidad existente.
-    
 - GET de una entidad que no exista (id inválido, por ejemplo)
-    
 - POST de una entidad nueva.
-    
 - POST de una entidad ya existente.
-    
 - DEL de una entidad existente.
-    
 - DEL de una entidad que no exista.
-    
 - PUT de una entidad existente.
-    
 - PUT de una entidad que no exista.
-    
 - PATCH de una entidad existente.
-    
 - PATCH de una entidad existente pero provocando incoherencia entre el id del path y el pasado en json.
-    
 
 Tras cada petición observa el listado de todas las entidades para asegurarte de que los cambios son coherentes.
 
@@ -181,51 +170,3 @@ no, hacerlo co PUT con id:
 - Excelente: lo anterior bien documentado y en el apartado 4 o dos entidades con relación 1aN.
     
 
-  
-
-**Pruebas**:
-
-Postman sí se puede utilizar sin registrarse. Alternativas a Postman: Thunderclient, [https://www.usebruno.com/](https://www.usebruno.com/) , [https://jsoncrack.com/](https://jsoncrack.com/) , [https://apidog.com/](https://apidog.com/)
-
-En línea de comandos:
-
-1.- Comandos POST, PUT, PATH (del paquete lwp-request) ejemplos:
-
-POST -c "application/json" [http://localhost:8080/paises](http://localhost:8080/paises)
-
-POST -m PUT -c "application/json" [http://localhost:8080/paises/australia](http://localhost:8080/paises/australia)
-
-POST -m DELETE [http://localhost:8080/paises/australia](http://localhost:8080/paises/australia)
-
--U muestra cabeceras de envío
-
--E muestra cabeceras de repuesta
-
-  
-
-2.- Con curl, opción -F, ejemplo del propio man de curl:
-
-curl -F name=John -F shoesize=11 https://example.com/
-
-o
-
-curl -F cantidad=3 http://www.misitio.com/stockv2.php
-
-Mejor especificando el verbo HTTP con -X:
-curl -i -X POST -H "Content-Type:application/json" -d '{"firstName": "Frodo", "lastName": "Baggins"}' http://localhost:8080/people
-curl -i -X PUT -H "Content-Type:application/json" -d '{"firstName": "Bilbo", "lastName": "Baggins"}' http://localhost:8080/people/1
-curl -i -X PATCH -H "Content-Type:application/json" -d '{"firstName": "Bilbo Jr."}' http://localhost:8080/people/1
-curl -i -X DELETE http://localhost:8080/people/1
-
-Más ejemplos en: [https://spring.io/guides/gs/accessing-data-rest](https://spring.io/guides/gs/accessing-data-rest)
-
-Alternatvias: httpie, [https://hurl.dev/](https://hurl.dev/)  
-  
-
-3.- Para pruebas de carga de rendimiento mediante petición masivas: ab, opciones -T y -p con un archivo que contenga el texto parametro=valor:
-
-ab -T application/x-www-form-urlencoded -n 100 -c 5 -p post.txt http://www.misitio.com/stockv2.php
-
-en el archivo de texto va todo en una sola línea separado por & , ej:
-
-otro=1&cantidad=1

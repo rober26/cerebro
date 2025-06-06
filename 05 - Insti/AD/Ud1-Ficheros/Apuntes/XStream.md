@@ -20,12 +20,12 @@ XStream es una biblioteca de Java que permite convertir objetos en XML y JSON y 
 ## **2. Instalación**
 
 Para usar XStream, se debe agregar la dependencia en **Maven**:
-
-`<dependency>`     
-	`<groupId>com.thoughtworks.xstream</groupId>     <artifactId>xstream</artifactId>`     
-	`<version>1.4.20</version>`
-`</dependency>`
-
+````
+<dependency>     
+	<groupId>com.thoughtworks.xstream</groupId>     <artifactId>xstream</artifactId>     
+	<version>1.4.20</version>
+</dependency>
+````
 O descargar la librería desde XStream.
 
 ---
@@ -33,34 +33,33 @@ O descargar la librería desde XStream.
 ## **3. Uso Básico**
 
 ### **3.1. Serialización (Objeto → XML)**
-
-
-`import com.thoughtworks.xstream.XStream;` 
-`public class Main {`     
-	`public static void main(String[] args) {`         
-		`XStream xstream = new XStream();`
-		`Persona persona = new Persona("Juan", 30);`          
-		`String xml = xstream.toXML(persona);`         
-		`System.out.println(xml);`     
-	`}` 
-`}`  
-`class Persona {`     
-	`private String nombre;`     
-	`private int edad;`      
+````
+import com.thoughtworks.xstream.XStream; 
+public class Main {     
+	public static void main(String[] args) {         
+		XStream xstream = new XStream();
+		Persona persona = new Persona("Juan", 30);          
+		String xml = xstream.toXML(persona);         
+		System.out.println(xml);     
+	} 
+}  
+class Persona {     
+	private String nombre;     
+	private int edad;      
 	
 	public Persona(String nombre, int edad) {`
 		`this.nombre = nombre;` 
 		`this.edad = edad;` 
 	}
-`}`
-
+}
+````
 **Salida XML:**
-
-`<com.ejemplo.Persona>`   
-	`<nombre>Juan</nombre>`   
-	`<edad>30</edad>` 
-`</com.ejemplo.Persona>`
-
+````
+<com.ejemplo.Persona>   
+	<nombre>Juan</nombre>   
+	<edad>30</edad> 
+</com.ejemplo.Persona>
+````
 ---
 
 ### **3.2. Deserialización (XML → Objeto)**
@@ -76,12 +75,12 @@ O descargar la librería desde XStream.
 `xstream.alias("persona", Persona.class);`
 
 Generará:
-
-`<persona>`   
-	`<nombre>Juan</nombre>`  
-	`<edad>30</edad>` 
-`</persona>`
-
+````
+<persona>   
+	<nombre>Juan</nombre>  
+	<edad>30</edad> 
+</persona>
+````
 ### **4.2. Omitir campos**
 
 `xstream.omitField(Persona.class, "edad");`
