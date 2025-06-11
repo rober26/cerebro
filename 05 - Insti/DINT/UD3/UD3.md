@@ -1,3 +1,3 @@
 [[Flex]] 
 [[Mobile first]](Media-querys)
-[[Grid]]
+[[01 -Tecnologias/Frontend/Estilizacion y UI/Css/Grid]]

@@ -62,15 +62,10 @@
 Archivo de configuración que indica:
 
 - Nombre de la unidad de persistencia (`persistence-unit`)
-    
 - Base de datos y usuario
-    
 - Dialecto (ej: `org.hibernate.dialect.MySQL8Dialect`)
-    
 - Proveedor (Hibernate, EclipseLink…)
-    
 - Entidades usadas
-    
 
 ---
 
@@ -79,37 +74,29 @@ Archivo de configuración que indica:
 ### 🔸 JPQL (Java Persistence Query Language)
 
 - Lenguaje orientado a objetos (consulta sobre clases, no tablas).
-    
-
-java
-
-Copiar código
-
-`Query q = em.createQuery("SELECT p FROM Producto p WHERE p.precio > :min"); q.setParameter("min", 10); List<Producto> resultados = q.getResultList();`
-
+````
+Query q = em.createQuery("SELECT p FROM Producto p WHERE p.precio > :min"); q.setParameter("min", 10); 
+List<Producto> resultados = q.getResultList();
+````
 ### 🔸 Criteria API
 
 - Forma de construir consultas de forma **dinámica y segura**, con código Java:
-    
-
-java
-
-Copiar código
-
-`CriteriaBuilder cb = em.getCriteriaBuilder(); CriteriaQuery<Producto> cq = cb.createQuery(Producto.class); Root<Producto> root = cq.from(Producto.class); cq.select(root).where(cb.gt(root.get("precio"), 10)); List<Producto> resultados = em.createQuery(cq).getResultList();`
-
+````
+CriteriaBuilder cb = em.getCriteriaBuilder(); 
+CriteriaQuery<Producto> cq = cb.createQuery(Producto.class); 
+Root<Producto> root = cq.from(Producto.class); cq.select(root).where(cb.gt(root.get("precio"), 10)); 
+List<Producto> resultados = em.createQuery(cq).getResultList();
+````
 ---
 
 ## 🔐 Transacciones
 
 Una transacción agrupa operaciones que deben realizarse **todas juntas o ninguna**.
-
-java
-
-Copiar código
-
-`em.getTransaction().begin(); em.persist(obj); em.getTransaction().commit();`
-
+````
+em.getTransaction().begin(); 
+em.persist(obj); 
+em.getTransaction().commit();
+````
 ---
 
 ## 📌 Ventajas del ORM

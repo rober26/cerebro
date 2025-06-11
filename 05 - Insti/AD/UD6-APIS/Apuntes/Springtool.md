@@ -7,38 +7,24 @@ Spring Tool Suite (STS) es un **IDE especializado** para el desarrollo de aplica
 ## 🛠️ Instalación de STS
 
 1. **Requisitos previos:**
-    
     - Java JDK (versión 8 o superior)
-        
     - Maven o Gradle (opcional, pero recomendado)
-        
 2. **Descarga:**
-    
     - Desde [https://spring.io/tools](https://spring.io/tools)
-        
 3. **Instalación:**
-    
     - Extraer el archivo ZIP y ejecutar el archivo `STS.exe` (Windows) o el equivalente en otros sistemas operativos.
-        
 
 ---
 
 ## 🧱 Características Principales
 
 - Basado en Eclipse.
-    
 - Integración con Spring Boot.
-    
 - Soporte para Maven y Gradle.
-    
 - Generación de proyectos desde Spring Initializr.
-    
 - Autocompletado, navegación entre clases, y sugerencias contextuales.
-    
 - Consola de logs integrada.
-    
 - Soporte para pruebas JUnit.
-    
 
 ---
 
@@ -47,39 +33,52 @@ Spring Tool Suite (STS) es un **IDE especializado** para el desarrollo de aplica
 ### Opción 1: Spring Initializr (GUI)
 
 1. File > New > Spring Starter Project.
-    
 2. Configura:
-    
     - Nombre del proyecto
-        
     - Group ID y Artifact ID
-        
     - Tipo de empaquetado (`jar` o `war`)
-        
     - Versión de Java
-        
 3. Elige dependencias (Spring Web, JPA, Security, etc.)
-    
 4. Termina y el proyecto se generará automáticamente.
-    
 
 ### Opción 2: Importar proyecto existente
 
 1. File > Import > Existing Maven/Gradle Project.
-    
 2. Navega al directorio y sigue los pasos del asistente.
-    
 
 ---
 
 ## 📦 Estructura típica de un proyecto Spring Boot
-
-bash
-
-CopiarEditar
-
-`src/ ├── main/ │   ├── java/ │   │   └── com/ejemplo/demo/ │   │       ├── DemoApplication.java │   │       └── controller/ │   │       └── service/ │   │       └── repository/ │   └── resources/ │       ├── application.properties │       └── static/ │       └── templates/ ├── test/`
-
+````
+src/ 
+├── main/ 
+│   
+├── java/ 
+│   
+│   
+└── com/ejemplo/demo/ 
+│   
+│       
+├── DemoApplication.java 
+│   
+│       
+└── controller/ 
+│   
+│       
+└── service/ 
+│   
+│       
+└── repository/ 
+│   
+└── resources/ 
+│       
+├── application.properties 
+│       
+└── static/ 
+│       
+└── templates/ 
+├── test/
+````
 ---
 
 ## ✍️ Archivos importantes
@@ -89,11 +88,6 @@ CopiarEditar
 Configuración del proyecto (puerto, base de datos, logging, etc.)
 
 Ejemplo:
-
-properties
-
-CopiarEditar
-
 `server.port=8081 spring.datasource.url=jdbc:mysql://localhost:3306/mi_bd spring.datasource.username=root spring.datasource.password=1234`
 
 ---
@@ -115,10 +109,6 @@ CopiarEditar
 
 Puedes crear tests con JUnit fácilmente:
 
-java
-
-CopiarEditar
-
 `@SpringBootTest public class MiServicioTest {      @Autowired     private MiServicio servicio;      @Test     public void testSuma() {         assertEquals(5, servicio.sumar(2, 3));     } }`
 
 ---
@@ -126,15 +116,10 @@ CopiarEditar
 ## 🧠 Consejos útiles
 
 - Usa `Ctrl + Shift + R` para abrir cualquier archivo rápidamente.
-    
 - Usa `@ComponentScan` para detectar beans fuera del paquete raíz.
-    
 - Usa `application-dev.properties` y perfiles para distintos entornos (`dev`, `prod`, etc.)
-    
 - Integra con Git desde STS o usa terminal integrada.
-    
 - Puedes usar **Lombok** para reducir código boilerplate (`@Getter`, `@Setter`, etc.)
-    
 
 ---
 
@@ -153,10 +138,6 @@ CopiarEditar
 
 ## 🔧 Ejemplo de aplicación simple (controlador)
 
-java
-
-CopiarEditar
-
 `@RestController @RequestMapping("/api/saludo") public class SaludoController {      @GetMapping     public String saludar(@RequestParam(defaultValue = "mundo") String nombre) {         return "Hola, " + nombre + "!";     } }`
 
 ---
@@ -164,19 +145,14 @@ CopiarEditar
 ## 🚀 Ejecutar el proyecto
 
 1. Botón derecho sobre la clase con `@SpringBootApplication`
-    
 2. Run As > Spring Boot App
-    
 
 ---
 
 ## 🧹 Limpieza y solución de errores
 
 - `Project > Clean`
-    
 - `Maven > Update Project`
-    
 - Revisa consola para errores de dependencias
-    
 
 ---

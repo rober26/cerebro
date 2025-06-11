@@ -165,3 +165,61 @@ public class Main {
 - **Desacoplamiento**: Separación de la lógica de acceso a datos de la lógica de negocio.
 - **Mantenibilidad**: La capa de acceso a datos es independiente y puede modificarse sin afectar al resto de la aplicación.
 - **Facilita las pruebas**: La implementación del acceso a datos se puede simular o mockear para facilitar las pruebas unitarias.
+
+### **7. Mejores prácticas para implementar DAO**
+
+- **Uso de Interfaces**: Siempre define una interfaz DAO para que la implementación pueda cambiarse fácilmente (por ejemplo, usar otra base de datos o incluso un sistema no relacional) sin modificar la lógica de negocio.
+- **Inyección de Dependencias**: Evita crear la conexión dentro del DAO; mejor pásala por constructor o usa un pool de conexiones para mejorar la gestión y pruebas.
+- **Manejo de transacciones**: En aplicaciones más complejas, no manejes la transacción dentro del DAO, sino en una capa superior (servicios), para controlar mejor las operaciones atómicas.
+- **Uso de PreparedStatement**: Siempre usa `PreparedStatement` para evitar inyección SQL y mejorar rendimiento en consultas repetidas.
+
+---
+
+### **8. Ejemplo de inyección de la conexión**
+
+En lugar de crear la conexión en el DAO, se pasa desde fuera:
+
+```
+public class AlumnoDAOImpl implements AlumnoDAO {     
+	private Connection conn;      // Constructor recibe la conexión    
+	public AlumnoDAOImpl(Connection conn) {         
+		this.conn = conn;    
+	}     
+	// ... métodos CRUD ... 
+}
+```
+
+Y en el código cliente:
+
+```
+try (Connection conn = DriverManager.getConnection(...)) {     
+	AlumnoDAO alumnoDAO = new AlumnoDAOImpl(conn);     // usar alumnoDAO...
+}
+````
+---
+
+### **9. Ejemplo básico de manejo de transacciones (en capa servicio)**
+```
+public class AlumnoService {     
+	private Connection conn;     
+	private AlumnoDAO alumnoDAO;      
+	public AlumnoService(Connection conn) {         
+		this.conn = conn;         
+		this.alumnoDAO = new AlumnoDAOImpl(conn);     
+	}
+	      
+	public void actualizarEliminar(Alumno alumno, int idEliminar){         
+		try {             
+			conn.setAutoCommit(false);              
+			alumnoDAO.actualizar(alumno);  
+			alumnoDAO.eliminar(idEliminar);              
+			conn.commit();         
+		} catch (SQLException e) {             
+			conn.rollback();             
+			throw e;         
+		} finally {             
+			conn.setAutoCommit(true);         
+		}     
+	} 
+}
+```
