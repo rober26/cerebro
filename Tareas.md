@@ -11,20 +11,9 @@
 # INGLES
 - [ ] Hacer Ejs
 - [x] Hacer apuntes ✅ 2025-06-11
-- [x] Hacer trabajo sobre [[Tech in teaching_learning]] ✅ 2025-06-11
-
+- [x] Hacer trabajo sobre [[Tech in teaching_learning]] ✅ 2025-06-1
+- [ ] 
 # PSP 
-- [ ] Hacer apuntes RA1 y RA2
-- [ ] Hacer EJ RA1
-- [ ] Hacer EJ RA2
 - [ ] Hacer trabajo RA1
 - [ ] Hacer trabajo RA2
-
-# DINT(Examen Miercoles)
-- [ ] Hacer apuntes de localStoraje
-- [x] Hacer apuntes de grid de la forma que hemos dado en clase ✅ 2025-06-10
-- [ ] Repasar examen de DINT  UD3
-- [ ] Hacer examen de DINT UD4 y UD5
-
-
 
