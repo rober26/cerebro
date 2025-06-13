@@ -5,6 +5,7 @@ package Procesos;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Locale;
 
 public class BusquedaVuelos {
     public static void main(String[] args) {
@@ -13,8 +14,8 @@ public class BusquedaVuelos {
             return;
         }
 
-        String origen = args[0];
-        String destino = args[1];
+        String origen = args[0].toLowerCase();
+        String destino = args[1].toLowerCase();
         String fecha = args[2];
 
         String archivoVuelos = "almacenamiento/vuelos.txt";

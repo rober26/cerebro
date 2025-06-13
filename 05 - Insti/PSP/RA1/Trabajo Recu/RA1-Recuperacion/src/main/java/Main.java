@@ -1,7 +1,4 @@
-import java.io.BufferedReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.Scanner;
 
 //Roberto Lespe Herrera roberto.lespe@educa.madrid.org
@@ -9,6 +6,7 @@ import java.util.Scanner;
 public class Main {
     static Scanner sc = new Scanner(System.in);
     static String classpath = "target/classes";
+    static String JAVA = System.getProperty("java.home") + File.separator + "bin" + File.separator + "java";
 
     public static void main(String[] args) {
         while (true){
@@ -29,7 +27,7 @@ public class Main {
                     break;
                 case "2":
                     try {
-                        ProcessBuilder pb = new ProcessBuilder("java", "-cp", classpath, "Procesos.GestionItinerarios");
+                        ProcessBuilder pb = new ProcessBuilder(JAVA, "-cp", classpath, "Procesos.GestionItinerarios");
                         pb.inheritIO();
                         pb.start().waitFor();
                     } catch (InterruptedException e) {
@@ -46,9 +44,9 @@ public class Main {
     }
     private static void buscarYReservarVuelo() throws Exception {
         System.out.print("Origen: ");
-        String origen = sc.nextLine().trim();
+        String origen = sc.nextLine().toLowerCase().trim();
         System.out.print("Destino: ");
-        String destino = sc.nextLine().trim();
+        String destino = sc.nextLine().toLowerCase().trim();
         System.out.print("Fecha (dd-mm-aaaa): ");
         String fecha = sc.nextLine().trim();
 
@@ -57,7 +55,7 @@ public class Main {
                 "Procesos.BusquedaVuelos", origen, destino, fecha);
 
         if (vuelo == null || vuelo.isEmpty()) {
-            System.out.println("No se an encontrado vuelos.");
+            System.out.println("No se an encontrado vuelos." + vuelo);
             return;
         }
 
@@ -106,7 +104,7 @@ public class Main {
 
     private static String ejecutarProcesoConArgumentosYLeerSalida(String clase, String... args) throws Exception {
         String[] comando = new String[4 + args.length];
-        comando[0] = "java";
+        comando[0] = JAVA;
         comando[1] = "-cp";
         comando[2] = classpath;
         comando[3] = clase;

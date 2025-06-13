@@ -3,35 +3,29 @@
 **Uso:**
 
 - Hábitos y rutinas.
-    
 - Hechos generales y verdades universales.
-    
 - Situaciones permanentes o estados.
-    
 
 ---
 
 #### Formación afirmativa:
 
-|Sujeto|Verbo (base) + s (3ª persona singular)|
-|---|---|
-|I|work|
-|You|work|
-|He / She / It|works|
-|We|work|
-|You (plural)|work|
-|They|work|
+| Sujeto        | Verbo (base) + s (3ª persona singular) |
+| ------------- | -------------------------------------- |
+| I             | work                                   |
+| You           | work                                   |
+| He / She / It | works                                  |
+| We            | work                                   |
+| You (plural)  | work                                   |
+| They          | work                                   |
 
 ---
 
 #### Ejemplos:
 
 - I **eat** breakfast at 7 a.m.
-    
 - She **studies** every day.
-    
 - The sun **rises** in the east.
-    
 
 ---
 

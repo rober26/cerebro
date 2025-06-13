@@ -68,13 +68,9 @@ Se usa para dar órdenes, instrucciones, consejos o invitaciones.
 #### Ejemplos:
 
 - **Sit down!** (¡Siéntate!)
-    
 - **Open the window.** (Abre la ventana.)
-    
 - **Don’t be late!** (¡No llegues tarde!)
-    
 - **Don’t touch that!** (¡No toques eso!)
-    
 
 ---
 
