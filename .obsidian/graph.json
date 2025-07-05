@@ -1,58 +1,86 @@
 {
   "collapse-filter": true,
-  "search": "-path:\"10 - Diary\"  -path:\"node_modules\"  ",
-  "showTags": false,
+  "search": "-path: \"node_modules\"  ",
+  "showTags": true,
   "showAttachments": false,
-  "hideUnresolved": false,
+  "hideUnresolved": true,
   "showOrphans": true,
   "collapse-color-groups": true,
   "colorGroups": [
     {
-      "query": "path:\"00 - Templates\"  ",
+      "query": "file:___",
       "color": {
         "a": 1,
-        "rgb": 14701138
+        "rgb": 16711680
       }
     },
     {
-      "query": "path:\"01 -Tecnologias\"  ",
+      "query": "file:__",
       "color": {
         "a": 1,
-        "rgb": 14390815
+        "rgb": 16761512
       }
     },
     {
-      "query": "path:\"02 - Proyectos\"  ",
+      "query": "file:_",
       "color": {
         "a": 1,
-        "rgb": 11657298
+        "rgb": 1690652
       }
     },
     {
-      "query": "path:\"03- Youtube\"  ",
+      "query": "path:\"01_Conocimiento\" ",
+      "color": {
+        "a": 1,
+        "rgb": 10027008
+      }
+    },
+    {
+      "query": "path:02_Proyectos  ",
+      "color": {
+        "a": 1,
+        "rgb": 16734464
+      }
+    },
+    {
+      "query": "path:03_Youtube  ",
       "color": {
         "a": 1,
         "rgb": 5431378
       }
     },
     {
-      "query": "path:\"05 - Insti\"  ",
+      "query": "path:04_CarnetConducir  ",
       "color": {
         "a": 1,
         "rgb": 5431473
       }
+    },
+    {
+      "query": "path:00_Templates  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:10_Diary  ",
+      "color": {
+        "a": 1,
+        "rgb": 5395168
+      }
     }
   ],
   "collapse-display": true,
-  "showArrow": false,
-  "textFadeMultiplier": -2,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
-  "collapse-forces": true,
-  "centerStrength": 0.625,
-  "repelStrength": 15.9375,
-  "linkStrength": 0.99,
-  "linkDistance": 250,
-  "scale": 0.3508306925556202,
+  "showArrow": true,
+  "textFadeMultiplier": -2.9,
+  "nodeSizeMultiplier": 1.01875,
+  "lineSizeMultiplier": 1.5546875,
+  "collapse-forces": false,
+  "centerStrength": 0.359375,
+  "repelStrength": 11.6666666666667,
+  "linkStrength": 1,
+  "linkDistance": 148,
+  "scale": 0.2292013594174951,
   "close": true
 }

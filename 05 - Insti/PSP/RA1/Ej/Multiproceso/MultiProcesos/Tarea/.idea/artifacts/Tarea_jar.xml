@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Tarea:jar">
-    <output-path>$PROJECT_DIR$/../MultiProcesos</output-path>
-    <root id="archive" name="Tarea.jar">
-      <element id="module-output" name="Tarea" />
-    </root>
-  </artifact>
-</component>

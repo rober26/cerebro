@@ -1,3 +1,6 @@
 {
-  "cssTheme": "PLN"
+  "cssTheme": "PLN",
+  "theme": "obsidian",
+  "accentColor": "#2653a6",
+  "nativeMenus": false
 }
