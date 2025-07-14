@@ -1,116 +1,144 @@
-Motor de juego: [[Unity3D]]
-## Historia General del Mundo
+Motor de juego: [[Unity2D]]
+## 🎮 Género
+- RPG de acción en 2D
+- Vista top-down (desde atrás, estilo "semi-inclinada")
 
-Nombre del Mundo:  Selentur
-Ambientación: Fantasía medieval con elementos de magia y tecnología antigua.
+---
 
-Existen dioses los cuales son los padres de las razas:
-	El dios humano(EL)-> Humanos
-	Las hadas elementales ->Elfos,Dragones
-		Aire
-		Agua
-		Fuego
-		Tierra
-	El dios demonio ->Demonios y semi demonios.
-	El dios animal  ->Animales y semihumanos.
+## ✨ Estilo artístico
+- Pixel art detallado, naturaleza viva y mística
+- Vista desde la espalda, camino vertical (de abajo hacia arriba)
+- Paleta de colores suaves, luces místicas y efectos mágicos
+- Animaciones fluidas: caminar, atacar, defenderse, interactuar
+- HUD minimalista y elegante
 
-Resumen de la Historia:
+---
 
+## 🗺 Ambientación
+- Mundo medieval fantástico, lleno de magia y secretos
+- Gran bosque místico con ruinas, lagos y seres espirituales
+- Reinos de diferentes razas (solo mencionados en la beta)
+- Conflicto central: demonios, el Rey Demonio y el Dios Oscuro
 
-Opciones:
+---
 
-1.Eres unas persona normal en busca de aventuras
+## 👤 Protagonista
+- Joven aldeano normal, sin pasado heroico
+- Vive en un pueblo tranquilo cercano a un bosque misterioso
+- Encuentra un amuleto en las ruinas, que lo conecta a un poder oculto
+- Su pueblo es destruido en un ataque demoníaco y es rescatado
 
-2.Eres de un pequeño pueblo el cual un día es atacado por un ser que quiere conquistar el mundo, desde entonces solo quieres 
+---
 
-## Protagonista y Razas del Mundo
+## ⚔️ Sistema de combate
+- En tiempo real, con libertad de movimiento
+- Inicialmente espada y escudo
+- Posibilidad de ampliar a lanzas, arcos, magia, artes marciales, etc.
+- Esquivar, bloquear y combos rápidos
+- Enemigos con IA variada: emboscadas, patrones de ataque distintos
 
-Protagonista:  
-Nombre: (Personalizable por el jugador)  
-Origen: Criado en un pequeño pueblo, el pueblo en el que aparezca dependerá de la raza.  
-Habilidad única: 
+---
 
-Razas del Mundo:
+## 💪 Sistema de progresión
+### 🔥 Principios
+- Sin niveles numéricos tradicionales
+- Estadísticas suben mediante acciones específicas (realismo)
 
--  Humanos 
-- Versátiles, pueden usar magia y armas.
-- Elfos 
-- Sabios,existen de varios tipos según su elemento.
-- Demonios
-	- Son parecidos a los semihumanos pero 
--  Semihumanos
-	- De distintas razas cada una con sus características.
-		- Gatos
-		- Perros
-		- Lobo
-## Línea de Tiempo y Eventos Importantes
+### 🌀 Estadísticas principales
+- **Fuerza (STR):** golpes cuerpo a cuerpo, carga de peso
+- **Agilidad (AGI):** esquivar, velocidad
+- **Resistencia (END):** soportar daño, correr grandes distancias
+- **Potencia espiritual (SPI):** habilidades mágicas y control espiritual
+- **Inteligencia (INT):** estudiar libros, investigar ruinas
+- **Precisión (DEX):** ataques críticos, puntería
+- **Carisma (CHA):** interactuar con NPCs, persuadir
 
-Evento 1: El Eclipse Eterno (Hace 1000 años)  
-Un antiguo sello fue roto, liberando a un ser conocido como "El Devorador de Almas", quien absorbió la luz del mundo, dividiéndolo en regiones de eterna noche y día perpetuo.
+### 🎓 Habilidades
+- Aprendidas mediante entrenamiento, práctica o estudio de libros
+- Relacionadas con mentores o ruinas antiguas
+- Ejemplo: "Golpe doble" tras muchas prácticas con espada, o "Meditación espiritual" tras estudiar con un espíritu superior
 
-Evento 2: Guerra de los Reinos (Hace 500 años)  
-Los reinos se dividieron entre los que querían restaurar la luz y los que querían abrazar la oscuridad.
+---
 
-Evento 3: El Despertar del Protagonista (Tiempo actual)  
-El protagonista activa accidentalmente un artefacto perdido y comienza a ser perseguido por todas las facciones.
+## 🗺 Mundo y zonas
+### 🌿 Zonas jugables (Beta)
+- **Pueblo natal:** aldea sencilla, casas pequeñas, vida pacífica
+- **Bosque místico:** zonas luminosas, espíritus menores, ruinas ocultas
+- **Ruinas antiguas:** lugar donde se encuentra el amuleto
+- **Pueblo refugio:** donde termina la beta
 
-Ramificaciones de la Historia:  
-Si el jugador abraza la luz → Se convierte en un nuevo Guardián.  
-Si el jugador usa la oscuridad → Se vuelve una deidad de las sombras.  
-Si el jugador no toma partido → El mundo se sumerge en el caos.
+### 🏰 Zonas mencionadas (no jugables)
+- Capital del reino humano
+- Reinos de razas especiales
+- Ciudades de comercio
+- Campamentos nómadas de dracónidos
 
-  
+---
 
-## Diseño de Mecánicas del Juego
+## 🐉 Razas
+- **Humanos:** mayoría del mundo conocido
+- **Dragones:** poderosos, con forma humana, comunicación telepática
+- **Dracónidos:** descendientes de dragones, nómadas, adoradores
+- **Espíritus:** elementales, menores (sin forma), medios (animales), superiores (forma humana)
+- **Semihumanos:** diferentes variantes, campamentos dispersos
 
-Movimiento del Personaje:
+---
 
-- Estilo tipo Zelda (con vista top-down o isométrica).
-- Posibilidad de correr, esquivar y trepar.
-- Habilidad de controlar la luz/sombra para resolver puzzles y acceder a áreas ocultas.
+## 🧩 Historia base (Beta)
+1️⃣ Introducción en el pueblo, día cotidiano  
+2️⃣ Exploración del bosque, hallazgo de las ruinas  
+3️⃣ Encuentro con el amuleto misterioso  
+4️⃣ Ataque demoníaco al pueblo natal, destrucción total  
+5️⃣ Protagonista pelea y cae inconsciente  
+6️⃣ Rescatado y llevado en un carro al pueblo refugio  
+7️⃣ Final abierto de la beta
 
-Sistema de Combate:
+---
 
-- Ataques físicos: Espadas, lanzas, dagas.
-- Magia elemental: Luz, sombra, fuego, hielo.
-- Combos y habilidades especiales: Dependiendo del arma y afinidad mágica.
-- Modo sigilo: Algunos enemigos pueden ser evitados sin pelear.
+## 🎒 Sistemas adicionales
+- **Inventario completo:** armas, armaduras, pociones, objetos mágicos
+- **Bestiario:** criaturas y enemigos encontrados
+- **Mapa:** vista parcial de zonas descubiertas
+- **Diario de misiones:** tareas principales y secundarias
+- **Interacciones:** decisiones que afectan carisma y relaciones
 
-Interacciones y Exploración:
+---
 
-- Diálogos con NPCs con opciones que afectan la historia.
-- Sistema de misiones: Principales y secundarias.
-- Crafteo de pociones y mejoras de equipo.
-- Mazmorras y áreas secretas desbloqueables con habilidades mágicas.
+## 🏹 Enemigos y jefes
+- Variedad de demonios, desde menores hasta élites
+- Mini jefes en mazmorras o ruinas
+- Jefes finales con mecánicas complejas
+- Futuros dragones o criaturas legendarias
 
-  
-Sistema de progresión: Subir de nivel, mejorar habilidades y equipo.  
-Toma de decisiones que afectan la historia y el mundo.
+---
 
-Sistema de Experiencia y Progresión:
+## 🎨 Diseño UI/UX
+- Estética simple y limpia
+- Barra de vida, energía (stamina) y barra espiritual
+- Indicadores de habilidad y objetos rápidos
+- Minimapa pequeño (opcional)
 
-- Gana XP derrotando enemigos o completando misiones.
-- Cada nivel desbloquea nuevas habilidades y mejora estadísticas.
-- El jugador puede especializarse en Magia de Luz, Magia de Sombra o Combate Físico.
-## Bocetos y Estilo Visual
+---
 
-Estilo Pixel Art:
+## 🌀 Extras para futuras versiones
+- Sistema de clanes o facciones
+- Forja de armas y personalización avanzada
+- Monturas (posiblemente dragones)
+- Construcción o mejora de refugios
 
-- Inspiración: Octopath Traveler, Moonlighter, Hyper Light Drifter.
-- Personaje: 64x96 píxeles
-- Tiles base: 48x48 píxeles
+---
 
-Diseño de Personajes:
-- Protagonista con animaciones detalladas: Idle, Walk, Attack, Magic.
-- NPCs con variaciones de raza y vestimenta.
-- Criaturas de la oscuridad con efectos de "distorsión".
+## 🧑‍💻 Tecnologías sugeridas
+- Unity 2D
+- Lenguaje: C#
+- Control de datos: ScriptableObjects, JSON o SQLite para inventarios
+- Animaciones: sistema de blend trees y animator modular
+- Posible IA básica para enemigos (FSM o Behaviour Tree sencillo)
 
-UI y Elementos Visuales:
-- Interfaz minimalista con un HUD sencillo para vida y magia.
-- Menús estilizados con iconografía inspirada en runas antiguas.
-- Diálogos con retratos de personajes en Pixel Art.
+---
 
-Paleta de Colores:  
-Tonos oscuros y místicos: Azules, morados y grises para zonas sombrías.  
-Tonos cálidos: Dorados, verdes y rojos para áreas iluminadas y mágicas.  
-Efectos de iluminación dinámica para crear una atmósfera mágica.
+# ✅ Resumen final
+Selentur propone un RPG en 2D con combate realista, progresión basada en acciones y un mundo profundo lleno de misterios y razas únicas. Con un arte detallado en pixel art y una narrativa oscura y envolvente, busca una experiencia madura y diferente a los RPG clásicos.
+
+---
+

@@ -1,7 +1,7 @@
 [[__3D]]
 [[__Backend]]
 [[__DevTools]]
-[[__Electronica]]
+[[01_Conocimiento/Electronica/__Electronica|__Electronica]]
 [[__Frontend]]
 [[__GameDevelopment]]
 [[SEO]]

@@ -1,6 +1,6 @@
 {
-  "collapse-filter": true,
-  "search": "-path: \"node_modules\"  ",
+  "collapse-filter": false,
+  "search": "-path: \"node_modules\"  -path:00_Templates  ",
   "showTags": true,
   "showAttachments": false,
   "hideUnresolved": true,
@@ -75,12 +75,12 @@
   "showArrow": true,
   "textFadeMultiplier": -2.9,
   "nodeSizeMultiplier": 1.01875,
-  "lineSizeMultiplier": 1.5546875,
+  "lineSizeMultiplier": 2.67760416666667,
   "collapse-forces": false,
-  "centerStrength": 0.359375,
-  "repelStrength": 11.6666666666667,
-  "linkStrength": 1,
-  "linkDistance": 148,
-  "scale": 0.2292013594174951,
+  "centerStrength": 0.03125,
+  "repelStrength": 6.66666666666667,
+  "linkStrength": 0.604166666666667,
+  "linkDistance": 64,
+  "scale": 0.34613323592870937,
   "close": true
 }
